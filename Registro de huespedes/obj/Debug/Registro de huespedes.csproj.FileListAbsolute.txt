@@ -1,0 +1,23 @@
+C:\Users\Juan Carlos Pech E\Documents\SharpDevelop Projects\Registro de huespedes\Registro de huespedes\bin\Debug\Registro de huespedes.exe.config
+C:\Users\Juan Carlos Pech E\Documents\SharpDevelop Projects\Registro de huespedes\Registro de huespedes\bin\Debug\Registro de huespedes.exe
+C:\Users\Juan Carlos Pech E\Documents\SharpDevelop Projects\Registro de huespedes\Registro de huespedes\bin\Debug\Registro de huespedes.pdb
+C:\Users\Juan Carlos Pech E\Documents\SharpDevelop Projects\Registro de huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.csprojResolveAssemblyReference.cache
+C:\Users\Juan Carlos Pech E\Documents\SharpDevelop Projects\Registro de huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.exe
+C:\Users\Juan Carlos Pech E\Documents\SharpDevelop Projects\Registro de huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.pdb
+C:\Users\Juan Carlos Pech E\Documents\SharpDevelop Projects\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.frmInicioLogin.resources
+C:\Users\Juan Carlos Pech E\Documents\SharpDevelop Projects\Registro de huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.csproj.GenerateResource.Cache
+C:\Users\Juan Carlos Pech E\Documents\SharpDevelop Projects\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.MainForm.resources
+C:\Users\Juan Carlos Pech E\Documents\SharpDevelop Projects\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmRegistarHuesped.resources
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\bin\Debug\Registro de huespedes.exe.config
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\bin\Debug\Registro de huespedes.exe
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\bin\Debug\Registro de huespedes.pdb
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.csprojResolveAssemblyReference.cache
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.FrmInicioLogin.resources
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.MainForm.resources
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmRegistarHuesped.resources
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.csproj.GenerateResource.Cache
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.exe
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.pdb
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmRegistrarAuto.resources
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmBuscarAutos.resources
+C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmCheckinRegistro.resources
