@@ -16,7 +16,7 @@ namespace Registro_de_huespedes.Views
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.GroupBox groupBox3;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox txtFolio;
+		private System.Windows.Forms.TextBox txtFoliocheckin;
 		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.DateTimePicker dtpHoraderegistro;
 		private System.Windows.Forms.TextBox txtPrecioHabitacion;
@@ -32,6 +32,8 @@ namespace Registro_de_huespedes.Views
 		private System.Windows.Forms.DateTimePicker dtpFechaSalida;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.Button btnAgregarnewdatos;
+		private System.Windows.Forms.ComboBox cmbElijirhuespedsiexiste;
+		private System.Windows.Forms.Button btnRegistrarcuandoyaexista;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -54,10 +56,13 @@ namespace Registro_de_huespedes.Views
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCheckinRegistro));
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.btnRegistrarcuandoyaexista = new System.Windows.Forms.Button();
+			this.cmbElijirhuespedsiexiste = new System.Windows.Forms.ComboBox();
 			this.btnAgregarnewdatos = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.txtFolio = new System.Windows.Forms.TextBox();
+			this.txtFoliocheckin = new System.Windows.Forms.TextBox();
 			this.label22 = new System.Windows.Forms.Label();
 			this.dtpHoraderegistro = new System.Windows.Forms.DateTimePicker();
 			this.txtPrecioHabitacion = new System.Windows.Forms.TextBox();
@@ -78,9 +83,11 @@ namespace Registro_de_huespedes.Views
 			// groupBox3
 			// 
 			this.groupBox3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.groupBox3.Controls.Add(this.btnRegistrarcuandoyaexista);
+			this.groupBox3.Controls.Add(this.cmbElijirhuespedsiexiste);
 			this.groupBox3.Controls.Add(this.btnAgregarnewdatos);
 			this.groupBox3.Controls.Add(this.label1);
-			this.groupBox3.Controls.Add(this.txtFolio);
+			this.groupBox3.Controls.Add(this.txtFoliocheckin);
 			this.groupBox3.Controls.Add(this.label22);
 			this.groupBox3.Controls.Add(this.dtpHoraderegistro);
 			this.groupBox3.Controls.Add(this.txtPrecioHabitacion);
@@ -98,14 +105,32 @@ namespace Registro_de_huespedes.Views
 			this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox3.Location = new System.Drawing.Point(12, 12);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(505, 341);
+			this.groupBox3.Size = new System.Drawing.Size(561, 411);
 			this.groupBox3.TabIndex = 51;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Datos Ocupados Por EL Hotel";
 			// 
+			// btnRegistrarcuandoyaexista
+			// 
+			this.btnRegistrarcuandoyaexista.Location = new System.Drawing.Point(229, 304);
+			this.btnRegistrarcuandoyaexista.Name = "btnRegistrarcuandoyaexista";
+			this.btnRegistrarcuandoyaexista.Size = new System.Drawing.Size(219, 32);
+			this.btnRegistrarcuandoyaexista.TabIndex = 50;
+			this.btnRegistrarcuandoyaexista.Text = "Registrar \r\n";
+			this.btnRegistrarcuandoyaexista.UseVisualStyleBackColor = true;
+			this.btnRegistrarcuandoyaexista.Click += new System.EventHandler(this.BtnRegistrarcuandoyaexistaClick);
+			// 
+			// cmbElijirhuespedsiexiste
+			// 
+			this.cmbElijirhuespedsiexiste.FormattingEnabled = true;
+			this.cmbElijirhuespedsiexiste.Location = new System.Drawing.Point(6, 304);
+			this.cmbElijirhuespedsiexiste.Name = "cmbElijirhuespedsiexiste";
+			this.cmbElijirhuespedsiexiste.Size = new System.Drawing.Size(205, 24);
+			this.cmbElijirhuespedsiexiste.TabIndex = 49;
+			// 
 			// btnAgregarnewdatos
 			// 
-			this.btnAgregarnewdatos.Location = new System.Drawing.Point(229, 303);
+			this.btnAgregarnewdatos.Location = new System.Drawing.Point(229, 362);
 			this.btnAgregarnewdatos.Name = "btnAgregarnewdatos";
 			this.btnAgregarnewdatos.Size = new System.Drawing.Size(219, 32);
 			this.btnAgregarnewdatos.TabIndex = 48;
@@ -121,12 +146,13 @@ namespace Registro_de_huespedes.Views
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Folio";
 			// 
-			// txtFolio
+			// txtFoliocheckin
 			// 
-			this.txtFolio.Location = new System.Drawing.Point(229, 25);
-			this.txtFolio.Name = "txtFolio";
-			this.txtFolio.Size = new System.Drawing.Size(233, 22);
-			this.txtFolio.TabIndex = 15;
+			this.txtFoliocheckin.Enabled = false;
+			this.txtFoliocheckin.Location = new System.Drawing.Point(229, 25);
+			this.txtFoliocheckin.Name = "txtFoliocheckin";
+			this.txtFoliocheckin.Size = new System.Drawing.Size(286, 22);
+			this.txtFoliocheckin.TabIndex = 15;
 			// 
 			// label22
 			// 
@@ -141,7 +167,7 @@ namespace Registro_de_huespedes.Views
 			this.dtpHoraderegistro.Format = System.Windows.Forms.DateTimePickerFormat.Time;
 			this.dtpHoraderegistro.Location = new System.Drawing.Point(229, 264);
 			this.dtpHoraderegistro.Name = "dtpHoraderegistro";
-			this.dtpHoraderegistro.Size = new System.Drawing.Size(239, 22);
+			this.dtpHoraderegistro.Size = new System.Drawing.Size(286, 22);
 			this.dtpHoraderegistro.TabIndex = 47;
 			// 
 			// txtPrecioHabitacion
@@ -149,7 +175,7 @@ namespace Registro_de_huespedes.Views
 			this.txtPrecioHabitacion.Location = new System.Drawing.Point(229, 57);
 			this.txtPrecioHabitacion.MaxLength = 10;
 			this.txtPrecioHabitacion.Name = "txtPrecioHabitacion";
-			this.txtPrecioHabitacion.Size = new System.Drawing.Size(233, 22);
+			this.txtPrecioHabitacion.Size = new System.Drawing.Size(286, 22);
 			this.txtPrecioHabitacion.TabIndex = 38;
 			// 
 			// label23
@@ -165,7 +191,7 @@ namespace Registro_de_huespedes.Views
 			this.txtCantidadadultos.Location = new System.Drawing.Point(229, 232);
 			this.txtCantidadadultos.MaxLength = 10;
 			this.txtCantidadadultos.Name = "txtCantidadadultos";
-			this.txtCantidadadultos.Size = new System.Drawing.Size(239, 22);
+			this.txtCantidadadultos.Size = new System.Drawing.Size(286, 22);
 			this.txtCantidadadultos.TabIndex = 43;
 			// 
 			// txtNumerohabitacion
@@ -173,7 +199,7 @@ namespace Registro_de_huespedes.Views
 			this.txtNumerohabitacion.Location = new System.Drawing.Point(229, 89);
 			this.txtNumerohabitacion.MaxLength = 15;
 			this.txtNumerohabitacion.Name = "txtNumerohabitacion";
-			this.txtNumerohabitacion.Size = new System.Drawing.Size(233, 22);
+			this.txtNumerohabitacion.Size = new System.Drawing.Size(286, 22);
 			this.txtNumerohabitacion.TabIndex = 40;
 			// 
 			// txtCantidadninios
@@ -181,7 +207,7 @@ namespace Registro_de_huespedes.Views
 			this.txtCantidadninios.Location = new System.Drawing.Point(229, 197);
 			this.txtCantidadninios.MaxLength = 10;
 			this.txtCantidadninios.Name = "txtCantidadninios";
-			this.txtCantidadninios.Size = new System.Drawing.Size(233, 22);
+			this.txtCantidadninios.Size = new System.Drawing.Size(286, 22);
 			this.txtCantidadninios.TabIndex = 42;
 			// 
 			// label7
@@ -196,7 +222,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			this.dtpFechaEntrada.Location = new System.Drawing.Point(229, 121);
 			this.dtpFechaEntrada.Name = "dtpFechaEntrada";
-			this.dtpFechaEntrada.Size = new System.Drawing.Size(233, 22);
+			this.dtpFechaEntrada.Size = new System.Drawing.Size(286, 22);
 			this.dtpFechaEntrada.TabIndex = 7;
 			// 
 			// label16
@@ -227,7 +253,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			this.dtpFechaSalida.Location = new System.Drawing.Point(229, 153);
 			this.dtpFechaSalida.Name = "dtpFechaSalida";
-			this.dtpFechaSalida.Size = new System.Drawing.Size(233, 22);
+			this.dtpFechaSalida.Size = new System.Drawing.Size(286, 22);
 			this.dtpFechaSalida.TabIndex = 9;
 			// 
 			// label14
@@ -242,10 +268,12 @@ namespace Registro_de_huespedes.Views
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(533, 370);
+			this.ClientSize = new System.Drawing.Size(587, 434);
 			this.Controls.Add(this.groupBox3);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmCheckinRegistro";
 			this.Text = "frmCheckinRegistro";
+			this.Load += new System.EventHandler(this.FrmCheckinRegistroLoad);
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox3.PerformLayout();
 			this.ResumeLayout(false);

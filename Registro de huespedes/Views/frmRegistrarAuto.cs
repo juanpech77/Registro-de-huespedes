@@ -38,7 +38,19 @@ namespace Registro_de_huespedes.Views
 		void BtnAgregarAutoClick(object sender, EventArgs e)
 		{
 			EliminarMsjdeError();
-			if(validarcamposvacios())
+			if(txtMatriculaauto.Text=="")
+			{
+				MessageBox.Show("Ingrese una matricula");
+			}
+			
+			else if (txtModeloauto.Text==""){
+			
+			MessageBox.Show("Ingrese un modelo");
+			
+			}
+			
+			else{
+				
 			MessageBox.Show("Datos Ingresados Correctamente");
 			oDatosauto.matricula = txtMatriculaauto.Text;
 			oDatosauto.modelo = txtModeloauto.Text;
@@ -46,6 +58,9 @@ namespace Registro_de_huespedes.Views
 			oDatosauto.descripcion = txtDescripcionauto.Text;
 			oDatosauto.agregarauto();
 			limpiadatosauto();
+			}
+			
+			
 			
 			
 		}

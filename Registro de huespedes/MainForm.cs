@@ -54,15 +54,16 @@ namespace Registro_de_huespedes
 		{
 			frmCheckinRegistro oNuevoregistro = new frmCheckinRegistro();
 			oNuevoregistro.ShowDialog();
-			//frmRegistarHuesped ODatioshuesped = new frmRegistarHuesped();
+//			frmRegistarHuesped ODatioshuesped = new frmRegistarHuesped();
 //			//ODatioshuesped.MdiParent=this;
 //			ODatioshuesped.ShowDialog();
 
 		}
-//		void BtnAutomovilClick(object sender, EventArgs e)
-//		{
-//			frmBuscarAutos ODatoscarhuesped = new frmBuscarAutos();
-//			ODatoscarhuesped.ShowDialog();
-//		}
+		
+		void BtnAutomovilClick(object sender, EventArgs e)
+		{
+			frmBuscarAutos ODatoscarhuesped = new frmBuscarAutos();
+			ODatoscarhuesped.ShowDialog();
+		}
 	}
 }

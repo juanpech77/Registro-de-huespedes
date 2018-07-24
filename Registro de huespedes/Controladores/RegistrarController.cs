@@ -52,11 +52,26 @@ namespace Registro_de_huespedes.Controladores
 											
 		public void agregarnuevohusped()
 		{
-			string sql=string.Format("INSERT INTO checkin_registro(nombre,apellido_p,apellido_m,edad,sexo,estado_civil,procedencia,nacionalidad,correo,telefono,pais,celular,codigo_postal,ciudad,folio) VALUES('{0}','{1}','{2}',{3},'{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}')",
-			                         nombre,apellido_p,apellido_m,edad,sexo,estado_civil,procedencia,nacionalidad,correo,telefono,pais,celular,codigo_postal,ciudad,folio);
+			string sql=string.Format("INSERT INTO huespedes(nombre,apellido_p,apellido_m,edad,sexo,estado_civil,procedencia,nacionalidad,correo,telefono,pais,celular,codigo_postal,ciudad) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')",
+			                         nombre,apellido_p,apellido_m,edad,sexo,estado_civil,procedencia,nacionalidad,correo,telefono,pais,celular,codigo_postal,ciudad);
 			                         
 			FrameBD.SQLIDU(sql);
 			
 		}
+		
+		  public string genera_clave(int l)
+        {
+            Random aleatorio = new Random();
+            string res = "";
+            string[] vals = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+            for (int i = 0; i <= l; i++)
+            {
+                res = res + vals[aleatorio.Next(vals.GetUpperBound(0) + 1)];
+            }
+            
+            return res;
+
+            
+        }
 	}
 }

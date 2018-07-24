@@ -67,10 +67,10 @@ namespace Registro_de_huespedes
 			this.operacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.ingresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.recargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.PanBarraTitulo = new System.Windows.Forms.Panel();
-			this.PBDesplazaMenu = new System.Windows.Forms.PictureBox();
-			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
 			this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.PanBarraTitulo = new System.Windows.Forms.Panel();
+			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+			this.PBDesplazaMenu = new System.Windows.Forms.PictureBox();
 			this.statusStrip1.SuspendLayout();
 			this.PanMenuVertical.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -156,7 +156,7 @@ namespace Registro_de_huespedes
 			this.btnAutomovil.TabIndex = 2;
 			this.btnAutomovil.Text = "  Huesped con\r\nautomovil";
 			this.btnAutomovil.UseVisualStyleBackColor = true;
-			//this.btnAutomovil.Click += new System.EventHandler(this.BtnAutomovilClick);
+			this.btnAutomovil.Click += new System.EventHandler(this.BtnAutomovilClick);
 			// 
 			// btncheckOut
 			// 
@@ -222,6 +222,13 @@ namespace Registro_de_huespedes
 			this.recargosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
 			this.recargosToolStripMenuItem.Text = "Recargos";
 			// 
+			// ayudaToolStripMenuItem
+			// 
+			this.ayudaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ayudaToolStripMenuItem.Image")));
+			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+			this.ayudaToolStripMenuItem.Text = "Ayuda";
+			// 
 			// PanBarraTitulo
 			// 
 			this.PanBarraTitulo.Controls.Add(this.toolStrip1);
@@ -231,6 +238,14 @@ namespace Registro_de_huespedes
 			this.PanBarraTitulo.Name = "PanBarraTitulo";
 			this.PanBarraTitulo.Size = new System.Drawing.Size(617, 374);
 			this.PanBarraTitulo.TabIndex = 4;
+			// 
+			// toolStrip1
+			// 
+			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+			this.toolStrip1.Name = "toolStrip1";
+			this.toolStrip1.Size = new System.Drawing.Size(617, 25);
+			this.toolStrip1.TabIndex = 1;
+			this.toolStrip1.Text = "toolStrip1";
 			// 
 			// PBDesplazaMenu
 			// 
@@ -242,21 +257,6 @@ namespace Registro_de_huespedes
 			this.PBDesplazaMenu.TabIndex = 0;
 			this.PBDesplazaMenu.TabStop = false;
 			this.PBDesplazaMenu.Click += new System.EventHandler(this.PBDesplazaMenuClick);
-			// 
-			// toolStrip1
-			// 
-			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-			this.toolStrip1.Name = "toolStrip1";
-			this.toolStrip1.Size = new System.Drawing.Size(617, 25);
-			this.toolStrip1.TabIndex = 1;
-			this.toolStrip1.Text = "toolStrip1";
-			// 
-			// ayudaToolStripMenuItem
-			// 
-			this.ayudaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ayudaToolStripMenuItem.Image")));
-			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-			this.ayudaToolStripMenuItem.Text = "Ayuda";
 			// 
 			// MainForm
 			// 

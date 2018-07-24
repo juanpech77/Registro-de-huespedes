@@ -48,16 +48,16 @@ namespace Registro_de_huespedes.Controladores
 			FrameBD.SQLIDU(sql);
 		}
 		
-		public void Actualizarautos( string des, string mat,string mod)
+		public void Actualizarautos( string mat, string mod,string des)
 		{
-			string sql = string.Format("UPDATE autos_clientes SET modelo='{0}','descripcion'{1}' WHERE matricula='{2}';",mod,des,mat);
+			string sql = string.Format("UPDATE autos_clientes SET matricula='{0}', modelo='{1}',descripcion='{2}' WHERE matricula='{0}';",mat,mod,des);
 			FrameBD.SQLIDU(sql);
 		}
-		public void Storeautos()
+		/*public void Storeautos()
 		{
-			string sql = string.Format("INSERT INTO autos_clientes(matricula,modelo,descripcion)VALUES ('{0}','{1}','{2}')",
-			                           matricula,modelo,descripcion);
+			string sql = string.Format("INSERT INTO autos_clientes(matricula,modelo,descripcion,folio)VALUES ('{0}','{1}','{2}',{3})",
+			                           matricula,modelo,descripcion,folio);
 			FrameBD.SQLIDU(sql);
-		}
+		}*/
 	}
 }

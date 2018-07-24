@@ -23,10 +23,10 @@ namespace Registro_de_huespedes.Views
 		private System.Windows.Forms.TextBox txtCelular;
 		private System.Windows.Forms.TextBox txtPais;
 		private System.Windows.Forms.TextBox txtCodigoPostal;
-		private System.Windows.Forms.ComboBox cmdEstadoCivil;
+		private System.Windows.Forms.ComboBox cmbEstadoCivil;
 		private System.Windows.Forms.Label label20;
 		private System.Windows.Forms.Label label19;
-		private System.Windows.Forms.ComboBox cmdSexo;
+		private System.Windows.Forms.ComboBox cmbSexo;
 		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.Label label17;
 		private System.Windows.Forms.TextBox txtCiudad;
@@ -47,9 +47,6 @@ namespace Registro_de_huespedes.Views
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button btnRegistrarhuesped;
 		private System.Windows.Forms.Button btnAgregarautomenup;
-		private System.Windows.Forms.Button btnGenerarregistro;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox txtFolioUnico;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -101,14 +98,11 @@ namespace Registro_de_huespedes.Views
 			this.txtNombre = new System.Windows.Forms.TextBox();
 			this.txtEdad = new System.Windows.Forms.TextBox();
 			this.label11 = new System.Windows.Forms.Label();
-			this.cmdSexo = new System.Windows.Forms.ComboBox();
+			this.cmbSexo = new System.Windows.Forms.ComboBox();
 			this.label18 = new System.Windows.Forms.Label();
-			this.cmdEstadoCivil = new System.Windows.Forms.ComboBox();
+			this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
 			this.label20 = new System.Windows.Forms.Label();
 			this.btnAgregarautomenup = new System.Windows.Forms.Button();
-			this.btnGenerarregistro = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this.txtFolioUnico = new System.Windows.Forms.TextBox();
 			this.gpbRegistrardatoshuesped.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
@@ -122,7 +116,7 @@ namespace Registro_de_huespedes.Views
 			this.gpbRegistrardatoshuesped.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.gpbRegistrardatoshuesped.Location = new System.Drawing.Point(12, 12);
 			this.gpbRegistrardatoshuesped.Name = "gpbRegistrardatoshuesped";
-			this.gpbRegistrardatoshuesped.Size = new System.Drawing.Size(976, 448);
+			this.gpbRegistrardatoshuesped.Size = new System.Drawing.Size(873, 448);
 			this.gpbRegistrardatoshuesped.TabIndex = 0;
 			this.gpbRegistrardatoshuesped.TabStop = false;
 			this.gpbRegistrardatoshuesped.Text = "Registar Nuevo Huesped";
@@ -130,8 +124,6 @@ namespace Registro_de_huespedes.Views
 			// groupBox2
 			// 
 			this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-			this.groupBox2.Controls.Add(this.label1);
-			this.groupBox2.Controls.Add(this.txtFolioUnico);
 			this.groupBox2.Controls.Add(this.label9);
 			this.groupBox2.Controls.Add(this.label10);
 			this.groupBox2.Controls.Add(this.txtProdedencia);
@@ -295,9 +287,9 @@ namespace Registro_de_huespedes.Views
 			this.groupBox1.Controls.Add(this.txtNombre);
 			this.groupBox1.Controls.Add(this.txtEdad);
 			this.groupBox1.Controls.Add(this.label11);
-			this.groupBox1.Controls.Add(this.cmdSexo);
+			this.groupBox1.Controls.Add(this.cmbSexo);
 			this.groupBox1.Controls.Add(this.label18);
-			this.groupBox1.Controls.Add(this.cmdEstadoCivil);
+			this.groupBox1.Controls.Add(this.cmbEstadoCivil);
 			this.groupBox1.Controls.Add(this.label20);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.Location = new System.Drawing.Point(15, 29);
@@ -309,7 +301,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// btnRegistrarhuesped
 			// 
-			this.btnRegistrarhuesped.Location = new System.Drawing.Point(165, 278);
+			this.btnRegistrarhuesped.Location = new System.Drawing.Point(12, 333);
 			this.btnRegistrarhuesped.Name = "btnRegistrarhuesped";
 			this.btnRegistrarhuesped.Size = new System.Drawing.Size(165, 36);
 			this.btnRegistrarhuesped.TabIndex = 35;
@@ -382,17 +374,17 @@ namespace Registro_de_huespedes.Views
 			this.label11.TabIndex = 12;
 			this.label11.Text = "Edad";
 			// 
-			// cmdSexo
+			// cmbSexo
 			// 
-			this.cmdSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmdSexo.FormattingEnabled = true;
-			this.cmdSexo.Items.AddRange(new object[] {
+			this.cmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbSexo.FormattingEnabled = true;
+			this.cmbSexo.Items.AddRange(new object[] {
 			"Hombre",
 			"Mujer"});
-			this.cmdSexo.Location = new System.Drawing.Point(165, 162);
-			this.cmdSexo.Name = "cmdSexo";
-			this.cmdSexo.Size = new System.Drawing.Size(200, 26);
-			this.cmdSexo.TabIndex = 4;
+			this.cmbSexo.Location = new System.Drawing.Point(165, 162);
+			this.cmbSexo.Name = "cmbSexo";
+			this.cmbSexo.Size = new System.Drawing.Size(200, 26);
+			this.cmbSexo.TabIndex = 4;
 			// 
 			// label18
 			// 
@@ -402,18 +394,18 @@ namespace Registro_de_huespedes.Views
 			this.label18.TabIndex = 29;
 			this.label18.Text = "Sexo";
 			// 
-			// cmdEstadoCivil
+			// cmbEstadoCivil
 			// 
-			this.cmdEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmdEstadoCivil.FormattingEnabled = true;
-			this.cmdEstadoCivil.Items.AddRange(new object[] {
+			this.cmbEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbEstadoCivil.FormattingEnabled = true;
+			this.cmbEstadoCivil.Items.AddRange(new object[] {
 			"Soltero",
 			"Casado",
 			"Viudo"});
-			this.cmdEstadoCivil.Location = new System.Drawing.Point(165, 194);
-			this.cmdEstadoCivil.Name = "cmdEstadoCivil";
-			this.cmdEstadoCivil.Size = new System.Drawing.Size(200, 26);
-			this.cmdEstadoCivil.TabIndex = 5;
+			this.cmbEstadoCivil.Location = new System.Drawing.Point(165, 194);
+			this.cmbEstadoCivil.Name = "cmbEstadoCivil";
+			this.cmbEstadoCivil.Size = new System.Drawing.Size(200, 26);
+			this.cmbEstadoCivil.TabIndex = 5;
 			// 
 			// label20
 			// 
@@ -434,38 +426,12 @@ namespace Registro_de_huespedes.Views
 			this.btnAgregarautomenup.UseVisualStyleBackColor = true;
 			this.btnAgregarautomenup.Click += new System.EventHandler(this.BtnAgregarautomenupClick);
 			// 
-			// btnGenerarregistro
-			// 
-			this.btnGenerarregistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnGenerarregistro.Location = new System.Drawing.Point(434, 466);
-			this.btnGenerarregistro.Name = "btnGenerarregistro";
-			this.btnGenerarregistro.Size = new System.Drawing.Size(165, 36);
-			this.btnGenerarregistro.TabIndex = 38;
-			this.btnGenerarregistro.Text = "Generar Registro";
-			this.btnGenerarregistro.UseVisualStyleBackColor = true;
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(16, 341);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(100, 23);
-			this.label1.TabIndex = 36;
-			this.label1.Text = "Folio";
-			// 
-			// txtFolioUnico
-			// 
-			this.txtFolioUnico.Location = new System.Drawing.Point(188, 338);
-			this.txtFolioUnico.Name = "txtFolioUnico";
-			this.txtFolioUnico.Size = new System.Drawing.Size(200, 26);
-			this.txtFolioUnico.TabIndex = 37;
-			// 
 			// frmRegistarHuesped
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Window;
-			this.ClientSize = new System.Drawing.Size(1151, 523);
-			this.Controls.Add(this.btnGenerarregistro);
+			this.ClientSize = new System.Drawing.Size(886, 523);
 			this.Controls.Add(this.btnAgregarautomenup);
 			this.Controls.Add(this.gpbRegistrardatoshuesped);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

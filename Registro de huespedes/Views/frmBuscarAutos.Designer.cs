@@ -30,6 +30,8 @@ namespace Registro_de_huespedes.Views
 		private System.Windows.Forms.Button btnGuardarcarU;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.TextBox txtFoliocar;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.DataGridView dataGridView1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -52,7 +54,12 @@ namespace Registro_de_huespedes.Views
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBuscarAutos));
 			this.gpbBuscarautos = new System.Windows.Forms.GroupBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.label5 = new System.Windows.Forms.Label();
+			this.txtFoliocar = new System.Windows.Forms.TextBox();
 			this.btnGuardarcarU = new System.Windows.Forms.Button();
 			this.btnEditarcar = new System.Windows.Forms.Button();
 			this.btnEliminacar = new System.Windows.Forms.Button();
@@ -66,14 +73,15 @@ namespace Registro_de_huespedes.Views
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtBuscarautos = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.txtFoliocar = new System.Windows.Forms.TextBox();
-			this.label5 = new System.Windows.Forms.Label();
 			this.gpbBuscarautos.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvDatoscar)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// gpbBuscarautos
 			// 
+			this.gpbBuscarautos.Controls.Add(this.button1);
+			this.gpbBuscarautos.Controls.Add(this.dataGridView1);
 			this.gpbBuscarautos.Controls.Add(this.label5);
 			this.gpbBuscarautos.Controls.Add(this.txtFoliocar);
 			this.gpbBuscarautos.Controls.Add(this.btnGuardarcarU);
@@ -96,9 +104,43 @@ namespace Registro_de_huespedes.Views
 			this.gpbBuscarautos.TabStop = false;
 			this.gpbBuscarautos.Text = "groupBox1";
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(702, 289);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.TabIndex = 16;
+			this.button1.Text = "Editar";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
+			// 
+			// dataGridView1
+			// 
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Location = new System.Drawing.Point(409, 226);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+			this.dataGridView1.TabIndex = 15;
+			this.dataGridView1.Visible = false;
+			// 
+			// label5
+			// 
+			this.label5.Location = new System.Drawing.Point(17, 144);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(70, 23);
+			this.label5.TabIndex = 14;
+			this.label5.Text = "Folio";
+			// 
+			// txtFoliocar
+			// 
+			this.txtFoliocar.Location = new System.Drawing.Point(100, 144);
+			this.txtFoliocar.Name = "txtFoliocar";
+			this.txtFoliocar.Size = new System.Drawing.Size(147, 22);
+			this.txtFoliocar.TabIndex = 13;
+			// 
 			// btnGuardarcarU
 			// 
-			this.btnGuardarcarU.Location = new System.Drawing.Point(42, 365);
+			this.btnGuardarcarU.Location = new System.Drawing.Point(42, 414);
 			this.btnGuardarcarU.Name = "btnGuardarcarU";
 			this.btnGuardarcarU.Size = new System.Drawing.Size(75, 23);
 			this.btnGuardarcarU.TabIndex = 12;
@@ -108,7 +150,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// btnEditarcar
 			// 
-			this.btnEditarcar.Location = new System.Drawing.Point(250, 365);
+			this.btnEditarcar.Location = new System.Drawing.Point(249, 365);
 			this.btnEditarcar.Name = "btnEditarcar";
 			this.btnEditarcar.Size = new System.Drawing.Size(75, 23);
 			this.btnEditarcar.TabIndex = 11;
@@ -207,21 +249,6 @@ namespace Registro_de_huespedes.Views
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Buscar";
 			// 
-			// txtFoliocar
-			// 
-			this.txtFoliocar.Location = new System.Drawing.Point(100, 144);
-			this.txtFoliocar.Name = "txtFoliocar";
-			this.txtFoliocar.Size = new System.Drawing.Size(147, 22);
-			this.txtFoliocar.TabIndex = 13;
-			// 
-			// label5
-			// 
-			this.label5.Location = new System.Drawing.Point(17, 144);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(70, 23);
-			this.label5.TabIndex = 14;
-			this.label5.Text = "Folio";
-			// 
 			// frmBuscarAutos
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -229,12 +256,14 @@ namespace Registro_de_huespedes.Views
 			this.ClientSize = new System.Drawing.Size(821, 527);
 			this.Controls.Add(this.gpbBuscarautos);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frmBuscarAutos";
 			this.Text = "frmBuscarAutos";
 			this.Load += new System.EventHandler(this.FrmBuscarAutosLoad);
 			this.gpbBuscarautos.ResumeLayout(false);
 			this.gpbBuscarautos.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvDatoscar)).EndInit();
 			this.ResumeLayout(false);
 

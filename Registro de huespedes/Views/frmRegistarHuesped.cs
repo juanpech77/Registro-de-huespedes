@@ -37,13 +37,12 @@ namespace Registro_de_huespedes.Views
 		}
 		void BtnRegistrarhuespedClick(object sender, EventArgs e)
 		{
-		
 			ORegistro.nombre=txtNombre.Text;
 			ORegistro.apellido_p=txtApellidoP.Text;
 			ORegistro.apellido_m=txtApellidoM.Text;
 			ORegistro.edad=Convert.ToInt32(txtEdad.Text);
-			ORegistro.sexo=cmdSexo.SelectedText;
-			ORegistro.estado_civil=cmdEstadoCivil.SelectedText;
+			ORegistro.sexo=cmbSexo.SelectedItem.ToString();
+			ORegistro.estado_civil=cmbEstadoCivil.SelectedItem.ToString();
 			ORegistro.procedencia=txtProdedencia.Text;
 			ORegistro.nacionalidad=txtNacionalidad.Text;
 			ORegistro.correo=txtCorreo.Text;
@@ -52,7 +51,7 @@ namespace Registro_de_huespedes.Views
 			ORegistro.celular=txtCelular.Text;
 			ORegistro.codigo_postal=txtCodigoPostal.Text;
 			ORegistro.ciudad=txtCiudad.Text;
-			ORegistro.folio=txtFolioUnico.Text;
+		
 			ORegistro.agregarnuevohusped();
 			cleandatoshuesped();
 			MessageBox.Show("Datos Registrados Correcctaménte","Registro",MessageBoxButtons.OK,MessageBoxIcon.Information);
@@ -83,10 +82,10 @@ namespace Registro_de_huespedes.Views
 			txtCiudad.Clear();
 			txtPais.Clear();
 			txtCelular.Clear();
-			cmdSexo.Items.Clear();
+			cmbSexo.Items.Clear();
 			txtCodigoPostal.Clear();
-			cmdEstadoCivil.Items.Clear();
-			txtFolioUnico.Clear();
+			cmbEstadoCivil.Items.Clear();
+			
 			
 		}
 		void BtnAgregarautomenupClick(object sender, EventArgs e)

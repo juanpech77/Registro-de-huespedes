@@ -42,8 +42,9 @@ namespace Registro_de_huespedes.Views
 		{
 			OBusca.matricula=txtMatriculacar.Text;
 			OBusca.modelo=txtModelocar.Text;
+			OBusca.folio=txtFoliocar.Text;
 			OBusca.descripcion=txtDescripcioncar.Text;
-			OBusca.Storeautos();
+			OBusca.agregarauto();
 			OBusca.Buscarautos(txtBuscarautos.Text,dgvDatoscar);
 			txtMatriculacar.Clear();
 			txtModelocar.Clear();
@@ -78,6 +79,10 @@ namespace Registro_de_huespedes.Views
 			txtDescripcioncar.Clear();
 			btnGuardarcarU.Visible=false;
 			btnGuardar.Visible=true;
+		}
+		void Button1Click(object sender, EventArgs e)
+		{
+			dataGridView1.Visible=true;
 		}
 	
 		
