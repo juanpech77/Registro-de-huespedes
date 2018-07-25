@@ -53,17 +53,11 @@ namespace Registro_de_huespedes.Views
 			ORegistro.ciudad=txtCiudad.Text;
 		
 			ORegistro.agregarnuevohusped();
+			
 			cleandatoshuesped();
 			MessageBox.Show("Datos Registrados Correcctaménte","Registro",MessageBoxButtons.OK,MessageBoxIcon.Information);
 			
 				
-			//ORegistro.precio=Convert.ToSingle(txtPrecioHabitacion.Text);
-			//ORegistro.numero_habitacion=Convert.ToInt32(txtNumerohabitacion.Text);
-			//ORegistro.fe_registro=dtpFechaEntrada.Value.ToString("yyyy-MM-dd");
-			//ORegistro.fs_registro=dtpFechaSalida.Value.ToString("yyyy-MM-dd");
-			//ORegistro.cantidad_ninios=Convert.ToInt32(txtCantidadninios.Text);
-			//ORegistro.cantidad_adultos=Convert.ToInt32(txtCantidadadultos.Text);
-			//ORegistro.hora_registro=dtpHoraderegistro.Value.ToString("hh:mm:ss tt");
 			
 			
 

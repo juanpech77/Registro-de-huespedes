@@ -21,6 +21,8 @@ namespace Registro_de_huespedes.Views
 	public partial class frmCheckinRegistro : Form
 	{
 		RegistrarController addnuevoregistro =new RegistrarController();
+		//RegistrarController oDatoid = new RegistrarController();
+		
 		public frmCheckinRegistro()
 		{
 			//
@@ -39,20 +41,38 @@ namespace Registro_de_huespedes.Views
 		}
 		void BtnRegistrarcuandoyaexistaClick(object sender, EventArgs e)
 		{
-			addnuevoregistro.folio=txtFoliocheckin.Text;
+			addnuevoregistro.folioregistro=txtFoliocheckin.Text;//se genera automaticamente
 			addnuevoregistro.precio=Convert.ToSingle(txtPrecioHabitacion.Text);
-			addnuevoregistro.numero_habitacion=Convert.ToInt32(txtNumerohabitacion.Text);
 			addnuevoregistro.fe_registro=dtpFechaEntrada.Value.ToString("yyyy-MM-dd");
 			addnuevoregistro.fs_registro=dtpFechaSalida.Value.ToString("yyyy-MM-dd");
 			addnuevoregistro.cantidad_ninios=Convert.ToInt32(txtCantidadninios.Text);
 			addnuevoregistro.cantidad_adultos=Convert.ToInt32(txtCantidadadultos.Text);
 			addnuevoregistro.hora_registro=dtpHoraderegistro.Value.ToString("hh:mm:ss tt");
+			addnuevoregistro.numero_habitacion=Convert.ToInt32(txtNumerohabitacion.Text);
+			addnuevoregistro.idusu = Convert.ToInt32(cmbElijirhuespedsiexiste.SelectedValue.ToString());//elejir dato del huesped si existe
+			
+			
+			addnuevoregistro.addregistronuevo();
+			clearegistro();
 		}
 		void FrmCheckinRegistroLoad(object sender, EventArgs e)
 		{
 			txtFoliocheckin.Text = addnuevoregistro.genera_clave(6);
+			addnuevoregistro.getdatoshuespedesexistentes(cmbElijirhuespedsiexiste);
 		}
-		
+		void clearegistro()
+		{
+			txtFoliocheckin.Clear();
+			txtPrecioHabitacion.Clear();
+			txtNumerohabitacion.Clear();
+			//dtpFechaEntrada
+			//dtpFechaSalida
+			txtCantidadninios.Clear();
+			txtCantidadadultos.Clear();
+			//dtpHoraderegistro
+			cmbElijirhuespedsiexiste.SelectedIndex = 0;
+			
+		}
 		
 	}
 }

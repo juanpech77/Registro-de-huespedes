@@ -18,30 +18,30 @@ namespace Registro_de_huespedes.Controladores
 	public class RegistrarController
 	{
 		//Definimos los campos como atributos
-		public string folio { get; set; }//0
+		public string folioregistro { get; set; }
 		public string nombre { get; set; }//1
-		public string apellido_p { get; set; }//2
-		public string apellido_m { get; set; }//3
-		public string telefono { get; set; }//4
-		public string correo { get; set; }//5
-		public string fe_registro { get; set; }//6
-		public string fs_registro { get; set; }//7
-		public string procedencia { get; set; }//8
-		public string nacionalidad { get; set; }//9
-		public int edad { get; set; }//tipo de dato correcto Tinyint//10
-		public string ciudad { get; set; }//11
-		public string pais { get; set; }//12
-		public int cantidad_ninios { get; set; }//tipo de dato correcto Integer//13
-		public int cantidad_adultos { get; set; }//tipo de dato correcto Integer//14
-		public string hora_registro { get; set; }//15
-		public string celular { get; set; }//16
-		public string sexo { get; set; }//17
-		public string codigo_postal { get; set; }//18
-		public string estado_civil { get; set; }//19
-		public float precio { get; set; }//20
-		public int numero_habitacion { get; set; }//tipo de dato correcto Integer//21
+		public string apellido_p { get; set; }
+		public string apellido_m { get; set; }
+		public string telefono { get; set; }
+		public string correo { get; set; }
+		public string fe_registro { get; set; }
+		public string fs_registro { get; set; }
+		public string procedencia { get; set; }
+		public string nacionalidad { get; set; }
+		public int edad { get; set; }//tipo de dato correcto Tinyint//
+		public string ciudad { get; set; }
+		public string pais { get; set; }
+		public int cantidad_ninios { get; set; }//tipo de dato correcto Integer
+		public int cantidad_adultos { get; set; }//tipo de dato correcto Integer
+		public string hora_registro { get; set; }
+		public string celular { get; set; }
+		public string sexo { get; set; }
+		public string codigo_postal { get; set; }
+		public string estado_civil { get; set; }
+		public float precio { get; set; }
+		public int numero_habitacion { get; set; }//tipo de dato correcto Integer
 		
-		
+		public int idusu {get; set;}
 		
 //		Value.ToString("yyyy-MM-dd") 
 //		Value.ToString("hh:mm:ss")
@@ -73,5 +73,28 @@ namespace Registro_de_huespedes.Controladores
 
             
         }
+		  
+		  public void addregistronuevo()//forulario cuando se de click Registrar cliente
+		  {
+		  	string sql=string.Format("INSERT INTO checkin_registro(folioregistro,precio,fe_registro,fs_registro,cantidad_ninios,cantidad_adultos,hora_registro,numero_habitacion,idusu) VALUES('{0}',{1},'{2}','{3}',{4},{5},'{6}',{7},{8})",
+		  	                         folioregistro,precio,fe_registro,fs_registro,cantidad_ninios,cantidad_adultos,hora_registro,numero_habitacion,idusu);
+		  	FrameBD.SQLIDU(sql);
+		  }
+		  
+		  public void getdatoshuespedesexistentes(ComboBox cmb)//obtener los datos, no inporta como se llame el combobox afuera
+		  {
+		  	//PASO 1: definimos los datos que llenaran al combobox
+		  	string buscarid = "SELECT idusu,nombre,apellido_p,apellido_m FROM huespedes";
+		  	
+		  	//PASO 2: vinculamos los datos al Datasoource
+		  	cmb.DataSource=FrameBD.SQLCOMBO(buscarid);
+		  	
+		  	//PASO 3 : especificar el valor a mostrar al usuario
+		  	cmb.DisplayMember="nombre,apellido_p,apellido_m";
+		  	
+		  	//PASO 4: Definir la clave primaria
+		  	cmb.ValueMember="idusu";
+		  	
+		  }
 	}
 }

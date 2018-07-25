@@ -105,14 +105,14 @@ namespace Registro_de_huespedes.Views
 			this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox3.Location = new System.Drawing.Point(12, 12);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(561, 411);
+			this.groupBox3.Size = new System.Drawing.Size(561, 465);
 			this.groupBox3.TabIndex = 51;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Datos Ocupados Por EL Hotel";
 			// 
 			// btnRegistrarcuandoyaexista
 			// 
-			this.btnRegistrarcuandoyaexista.Location = new System.Drawing.Point(229, 304);
+			this.btnRegistrarcuandoyaexista.Location = new System.Drawing.Point(248, 348);
 			this.btnRegistrarcuandoyaexista.Name = "btnRegistrarcuandoyaexista";
 			this.btnRegistrarcuandoyaexista.Size = new System.Drawing.Size(219, 32);
 			this.btnRegistrarcuandoyaexista.TabIndex = 50;
@@ -123,14 +123,14 @@ namespace Registro_de_huespedes.Views
 			// cmbElijirhuespedsiexiste
 			// 
 			this.cmbElijirhuespedsiexiste.FormattingEnabled = true;
-			this.cmbElijirhuespedsiexiste.Location = new System.Drawing.Point(6, 304);
+			this.cmbElijirhuespedsiexiste.Location = new System.Drawing.Point(6, 353);
 			this.cmbElijirhuespedsiexiste.Name = "cmbElijirhuespedsiexiste";
 			this.cmbElijirhuespedsiexiste.Size = new System.Drawing.Size(205, 24);
 			this.cmbElijirhuespedsiexiste.TabIndex = 49;
 			// 
 			// btnAgregarnewdatos
 			// 
-			this.btnAgregarnewdatos.Location = new System.Drawing.Point(229, 362);
+			this.btnAgregarnewdatos.Location = new System.Drawing.Point(46, 405);
 			this.btnAgregarnewdatos.Name = "btnAgregarnewdatos";
 			this.btnAgregarnewdatos.Size = new System.Drawing.Size(219, 32);
 			this.btnAgregarnewdatos.TabIndex = 48;
@@ -165,7 +165,7 @@ namespace Registro_de_huespedes.Views
 			// dtpHoraderegistro
 			// 
 			this.dtpHoraderegistro.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-			this.dtpHoraderegistro.Location = new System.Drawing.Point(229, 264);
+			this.dtpHoraderegistro.Location = new System.Drawing.Point(229, 237);
 			this.dtpHoraderegistro.Name = "dtpHoraderegistro";
 			this.dtpHoraderegistro.Size = new System.Drawing.Size(286, 22);
 			this.dtpHoraderegistro.TabIndex = 47;
@@ -180,7 +180,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// label23
 			// 
-			this.label23.Location = new System.Drawing.Point(6, 89);
+			this.label23.Location = new System.Drawing.Point(6, 283);
 			this.label23.Name = "label23";
 			this.label23.Size = new System.Drawing.Size(196, 23);
 			this.label23.TabIndex = 39;
@@ -188,7 +188,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// txtCantidadadultos
 			// 
-			this.txtCantidadadultos.Location = new System.Drawing.Point(229, 232);
+			this.txtCantidadadultos.Location = new System.Drawing.Point(229, 205);
 			this.txtCantidadadultos.MaxLength = 10;
 			this.txtCantidadadultos.Name = "txtCantidadadultos";
 			this.txtCantidadadultos.Size = new System.Drawing.Size(286, 22);
@@ -196,7 +196,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// txtNumerohabitacion
 			// 
-			this.txtNumerohabitacion.Location = new System.Drawing.Point(229, 89);
+			this.txtNumerohabitacion.Location = new System.Drawing.Point(229, 284);
 			this.txtNumerohabitacion.MaxLength = 15;
 			this.txtNumerohabitacion.Name = "txtNumerohabitacion";
 			this.txtNumerohabitacion.Size = new System.Drawing.Size(286, 22);
@@ -204,7 +204,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// txtCantidadninios
 			// 
-			this.txtCantidadninios.Location = new System.Drawing.Point(229, 197);
+			this.txtCantidadninios.Location = new System.Drawing.Point(229, 170);
 			this.txtCantidadninios.MaxLength = 10;
 			this.txtCantidadninios.Name = "txtCantidadninios";
 			this.txtCantidadninios.Size = new System.Drawing.Size(286, 22);
@@ -212,7 +212,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// label7
 			// 
-			this.label7.Location = new System.Drawing.Point(6, 124);
+			this.label7.Location = new System.Drawing.Point(6, 97);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(159, 23);
 			this.label7.TabIndex = 6;
@@ -220,14 +220,14 @@ namespace Registro_de_huespedes.Views
 			// 
 			// dtpFechaEntrada
 			// 
-			this.dtpFechaEntrada.Location = new System.Drawing.Point(229, 121);
+			this.dtpFechaEntrada.Location = new System.Drawing.Point(229, 94);
 			this.dtpFechaEntrada.Name = "dtpFechaEntrada";
 			this.dtpFechaEntrada.Size = new System.Drawing.Size(286, 22);
 			this.dtpFechaEntrada.TabIndex = 7;
 			// 
 			// label16
 			// 
-			this.label16.Location = new System.Drawing.Point(6, 269);
+			this.label16.Location = new System.Drawing.Point(6, 242);
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size(169, 23);
 			this.label16.TabIndex = 27;
@@ -235,7 +235,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// label8
 			// 
-			this.label8.Location = new System.Drawing.Point(6, 158);
+			this.label8.Location = new System.Drawing.Point(6, 131);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(159, 23);
 			this.label8.TabIndex = 8;
@@ -243,7 +243,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// label15
 			// 
-			this.label15.Location = new System.Drawing.Point(6, 235);
+			this.label15.Location = new System.Drawing.Point(6, 208);
 			this.label15.Name = "label15";
 			this.label15.Size = new System.Drawing.Size(181, 23);
 			this.label15.TabIndex = 26;
@@ -251,14 +251,14 @@ namespace Registro_de_huespedes.Views
 			// 
 			// dtpFechaSalida
 			// 
-			this.dtpFechaSalida.Location = new System.Drawing.Point(229, 153);
+			this.dtpFechaSalida.Location = new System.Drawing.Point(229, 126);
 			this.dtpFechaSalida.Name = "dtpFechaSalida";
 			this.dtpFechaSalida.Size = new System.Drawing.Size(286, 22);
 			this.dtpFechaSalida.TabIndex = 9;
 			// 
 			// label14
 			// 
-			this.label14.Location = new System.Drawing.Point(6, 200);
+			this.label14.Location = new System.Drawing.Point(6, 173);
 			this.label14.Name = "label14";
 			this.label14.Size = new System.Drawing.Size(184, 23);
 			this.label14.TabIndex = 25;
@@ -268,7 +268,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(587, 434);
+			this.ClientSize = new System.Drawing.Size(587, 513);
 			this.Controls.Add(this.groupBox3);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmCheckinRegistro";
