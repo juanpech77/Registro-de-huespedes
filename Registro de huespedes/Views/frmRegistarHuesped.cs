@@ -37,27 +37,87 @@ namespace Registro_de_huespedes.Views
 		}
 		void BtnRegistrarhuespedClick(object sender, EventArgs e)
 		{
-			ORegistro.nombre=txtNombre.Text;
-			ORegistro.apellido_p=txtApellidoP.Text;
-			ORegistro.apellido_m=txtApellidoM.Text;
-			ORegistro.edad=Convert.ToInt32(txtEdad.Text);
-			ORegistro.sexo=cmbSexo.SelectedItem.ToString();
-			ORegistro.estado_civil=cmbEstadoCivil.SelectedItem.ToString();
-			ORegistro.procedencia=txtProdedencia.Text;
-			ORegistro.nacionalidad=txtNacionalidad.Text;
-			ORegistro.correo=txtCorreo.Text;
-			ORegistro.telefono=txtTelefono.Text;
-			ORegistro.pais=txtPais.Text;
-			ORegistro.celular=txtCelular.Text;
-			ORegistro.codigo_postal=txtCodigoPostal.Text;
-			ORegistro.ciudad=txtCiudad.Text;
+			if (txtNombre.Text=="") 
+			{
+				MessageBox.Show("Ingrese su nombre");
+			}
+			else if(txtApellidoP.Text=="")
+			{
+				MessageBox.Show("Ingrese su apellido paterno");
+			}
+			else if(txtApellidoM.Text=="")
+			{
+				MessageBox.Show("Ingrese su apellido materno");
+			}
+			else if (txtEdad.Text=="")
+			{
+				MessageBox.Show("Ingrese su edad del huesped");
+			}
+			else if(cmbSexo.Text=="")
+			{
+				MessageBox.Show("Debe Elejir un Sexo");
+			}
+			else if(cmbEstadoCivil.Text=="")
+			{
+				MessageBox.Show("Debe Elejir un estado civil");
+			}
+			else if (txtProdedencia.Text=="")
+			{
+				MessageBox.Show("Escriba la procedencia");
+			}
+			else if (txtNacionalidad.Text=="")
+			{
+				MessageBox.Show("Escriba la Nacionalidad");
+			}
+			else if (txtCorreo.Text=="")
+			{
+				MessageBox.Show("Escriba un correo ");
+			}
+			else if (txtTelefono.Text=="")
+			{
+				MessageBox.Show("Escriba un número de telefono");
+			}
+			else if(txtPais.Text=="")
+			{
+				MessageBox.Show("Escriba su pais");
+			}
+			else if(txtCelular.Text=="")
+			{
+				MessageBox.Show("Escriba un número de celular");
+			}
+			else if (txtCodigoPostal.Text=="")
+			{
+				MessageBox.Show("Escriba su codigo postal");
+			}
+			else if(txtCiudad.Text=="")
+			{
+				MessageBox.Show("Escriba su ciudad del huesped");
+			}
+			else 
+			{
+				ORegistro.nombre=txtNombre.Text;
+				ORegistro.apellido_p=txtApellidoP.Text;
+				ORegistro.apellido_m=txtApellidoM.Text;
+				ORegistro.edad=Convert.ToInt32(txtEdad.Text);
+				ORegistro.sexo=cmbSexo.SelectedItem.ToString();
+				ORegistro.estado_civil=cmbEstadoCivil.SelectedItem.ToString();
+				ORegistro.procedencia=txtProdedencia.Text;
+				ORegistro.nacionalidad=txtNacionalidad.Text;
+				ORegistro.correo=txtCorreo.Text;
+				ORegistro.telefono=txtTelefono.Text;
+				ORegistro.pais=txtPais.Text;
+				ORegistro.celular=txtCelular.Text;
+				ORegistro.codigo_postal=txtCodigoPostal.Text;
+				ORegistro.ciudad=txtCiudad.Text;
 		
-			ORegistro.agregarnuevohusped();
+				ORegistro.agregarnuevohusped();
 			
-			cleandatoshuesped();
-			MessageBox.Show("Datos Registrados Correcctaménte","Registro",MessageBoxButtons.OK,MessageBoxIcon.Information);
+				cleandatoshuesped();
+				MessageBox.Show("Datos Registrados Correcctaménte","Registro",MessageBoxButtons.OK,MessageBoxIcon.Information);
 			
 				
+			
+			}
 			
 			
 

@@ -168,7 +168,7 @@ namespace Registro_de_huespedes.Views
 			this.dtpHoraderegistro.Location = new System.Drawing.Point(229, 237);
 			this.dtpHoraderegistro.Name = "dtpHoraderegistro";
 			this.dtpHoraderegistro.Size = new System.Drawing.Size(286, 22);
-			this.dtpHoraderegistro.TabIndex = 47;
+			this.dtpHoraderegistro.TabIndex = 5;
 			// 
 			// txtPrecioHabitacion
 			// 
@@ -176,7 +176,7 @@ namespace Registro_de_huespedes.Views
 			this.txtPrecioHabitacion.MaxLength = 10;
 			this.txtPrecioHabitacion.Name = "txtPrecioHabitacion";
 			this.txtPrecioHabitacion.Size = new System.Drawing.Size(286, 22);
-			this.txtPrecioHabitacion.TabIndex = 38;
+			this.txtPrecioHabitacion.TabIndex = 0;
 			// 
 			// label23
 			// 
@@ -192,7 +192,7 @@ namespace Registro_de_huespedes.Views
 			this.txtCantidadadultos.MaxLength = 10;
 			this.txtCantidadadultos.Name = "txtCantidadadultos";
 			this.txtCantidadadultos.Size = new System.Drawing.Size(286, 22);
-			this.txtCantidadadultos.TabIndex = 43;
+			this.txtCantidadadultos.TabIndex = 4;
 			// 
 			// txtNumerohabitacion
 			// 
@@ -200,7 +200,7 @@ namespace Registro_de_huespedes.Views
 			this.txtNumerohabitacion.MaxLength = 15;
 			this.txtNumerohabitacion.Name = "txtNumerohabitacion";
 			this.txtNumerohabitacion.Size = new System.Drawing.Size(286, 22);
-			this.txtNumerohabitacion.TabIndex = 40;
+			this.txtNumerohabitacion.TabIndex = 6;
 			// 
 			// txtCantidadninios
 			// 
@@ -208,7 +208,7 @@ namespace Registro_de_huespedes.Views
 			this.txtCantidadninios.MaxLength = 10;
 			this.txtCantidadninios.Name = "txtCantidadninios";
 			this.txtCantidadninios.Size = new System.Drawing.Size(286, 22);
-			this.txtCantidadninios.TabIndex = 42;
+			this.txtCantidadninios.TabIndex = 3;
 			// 
 			// label7
 			// 
@@ -223,7 +223,7 @@ namespace Registro_de_huespedes.Views
 			this.dtpFechaEntrada.Location = new System.Drawing.Point(229, 94);
 			this.dtpFechaEntrada.Name = "dtpFechaEntrada";
 			this.dtpFechaEntrada.Size = new System.Drawing.Size(286, 22);
-			this.dtpFechaEntrada.TabIndex = 7;
+			this.dtpFechaEntrada.TabIndex = 1;
 			// 
 			// label16
 			// 
@@ -254,7 +254,7 @@ namespace Registro_de_huespedes.Views
 			this.dtpFechaSalida.Location = new System.Drawing.Point(229, 126);
 			this.dtpFechaSalida.Name = "dtpFechaSalida";
 			this.dtpFechaSalida.Size = new System.Drawing.Size(286, 22);
-			this.dtpFechaSalida.TabIndex = 9;
+			this.dtpFechaSalida.TabIndex = 2;
 			// 
 			// label14
 			// 

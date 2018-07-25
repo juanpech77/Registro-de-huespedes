@@ -59,6 +59,7 @@ namespace Registro_de_huespedes
 			this.lblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
 			this.PanMenuVertical = new System.Windows.Forms.Panel();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.PBDesplazaMenu = new System.Windows.Forms.PictureBox();
 			this.btnRegistrarHuesped = new System.Windows.Forms.Button();
 			this.btnAutomovil = new System.Windows.Forms.Button();
 			this.btncheckOut = new System.Windows.Forms.Button();
@@ -70,13 +71,12 @@ namespace Registro_de_huespedes
 			this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.PanBarraTitulo = new System.Windows.Forms.Panel();
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-			this.PBDesplazaMenu = new System.Windows.Forms.PictureBox();
 			this.statusStrip1.SuspendLayout();
 			this.PanMenuVertical.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.PBDesplazaMenu)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.PanBarraTitulo.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.PBDesplazaMenu)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -104,6 +104,7 @@ namespace Registro_de_huespedes
 			// 
 			this.PanMenuVertical.BackColor = System.Drawing.Color.Maroon;
 			this.PanMenuVertical.Controls.Add(this.pictureBox1);
+			this.PanMenuVertical.Controls.Add(this.PBDesplazaMenu);
 			this.PanMenuVertical.Controls.Add(this.btnRegistrarHuesped);
 			this.PanMenuVertical.Controls.Add(this.btnAutomovil);
 			this.PanMenuVertical.Controls.Add(this.btncheckOut);
@@ -123,6 +124,18 @@ namespace Registro_de_huespedes
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 3;
 			this.pictureBox1.TabStop = false;
+			// 
+			// PBDesplazaMenu
+			// 
+			this.PBDesplazaMenu.Image = ((System.Drawing.Image)(resources.GetObject("PBDesplazaMenu.Image")));
+			this.PBDesplazaMenu.ImageLocation = "";
+			this.PBDesplazaMenu.Location = new System.Drawing.Point(33, 305);
+			this.PBDesplazaMenu.Name = "PBDesplazaMenu";
+			this.PBDesplazaMenu.Size = new System.Drawing.Size(66, 49);
+			this.PBDesplazaMenu.TabIndex = 0;
+			this.PBDesplazaMenu.TabStop = false;
+			this.PBDesplazaMenu.Visible = false;
+			this.PBDesplazaMenu.Click += new System.EventHandler(this.PBDesplazaMenuClick);
 			// 
 			// btnRegistrarHuesped
 			// 
@@ -232,7 +245,6 @@ namespace Registro_de_huespedes
 			// PanBarraTitulo
 			// 
 			this.PanBarraTitulo.Controls.Add(this.toolStrip1);
-			this.PanBarraTitulo.Controls.Add(this.PBDesplazaMenu);
 			this.PanBarraTitulo.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.PanBarraTitulo.Location = new System.Drawing.Point(159, 24);
 			this.PanBarraTitulo.Name = "PanBarraTitulo";
@@ -246,17 +258,6 @@ namespace Registro_de_huespedes
 			this.toolStrip1.Size = new System.Drawing.Size(617, 25);
 			this.toolStrip1.TabIndex = 1;
 			this.toolStrip1.Text = "toolStrip1";
-			// 
-			// PBDesplazaMenu
-			// 
-			this.PBDesplazaMenu.Image = ((System.Drawing.Image)(resources.GetObject("PBDesplazaMenu.Image")));
-			this.PBDesplazaMenu.ImageLocation = "";
-			this.PBDesplazaMenu.Location = new System.Drawing.Point(0, 43);
-			this.PBDesplazaMenu.Name = "PBDesplazaMenu";
-			this.PBDesplazaMenu.Size = new System.Drawing.Size(66, 49);
-			this.PBDesplazaMenu.TabIndex = 0;
-			this.PBDesplazaMenu.TabStop = false;
-			this.PBDesplazaMenu.Click += new System.EventHandler(this.PBDesplazaMenuClick);
 			// 
 			// MainForm
 			// 
@@ -277,11 +278,11 @@ namespace Registro_de_huespedes
 			this.statusStrip1.PerformLayout();
 			this.PanMenuVertical.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.PBDesplazaMenu)).EndInit();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.PanBarraTitulo.ResumeLayout(false);
 			this.PanBarraTitulo.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.PBDesplazaMenu)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

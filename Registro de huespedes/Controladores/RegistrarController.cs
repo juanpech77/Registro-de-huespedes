@@ -74,11 +74,11 @@ namespace Registro_de_huespedes.Controladores
             
         }
 		  
-		  public void addregistronuevo()//forulario cuando se de click Registrar cliente
+		  public void addregistronuevo()//formulario cuando se de click Registrar cliente
 		  {
 		  	string sql=string.Format("INSERT INTO checkin_registro(folioregistro,precio,fe_registro,fs_registro,cantidad_ninios,cantidad_adultos,hora_registro,numero_habitacion,idusu) VALUES('{0}',{1},'{2}','{3}',{4},{5},'{6}',{7},{8})",
 		  	                         folioregistro,precio,fe_registro,fs_registro,cantidad_ninios,cantidad_adultos,hora_registro,numero_habitacion,idusu);
-		  	FrameBD.SQLIDU(sql);
+		  		FrameBD.SQLIDU(sql);
 		  }
 		  
 		  public void getdatoshuespedesexistentes(ComboBox cmb)//obtener los datos, no inporta como se llame el combobox afuera

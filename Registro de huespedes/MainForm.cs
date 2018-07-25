@@ -65,5 +65,6 @@ namespace Registro_de_huespedes
 			frmBuscarAutos ODatoscarhuesped = new frmBuscarAutos();
 			ODatoscarhuesped.ShowDialog();
 		}
+		
 	}
 }

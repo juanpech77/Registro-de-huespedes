@@ -37,7 +37,7 @@ namespace Registro_de_huespedes.Views
 		}
 		void BtnAgregarAutoClick(object sender, EventArgs e)
 		{
-			EliminarMsjdeError();
+			//EliminarMsjdeError();
 			if(txtMatriculaauto.Text=="")
 			{
 				MessageBox.Show("Ingrese una matricula");
@@ -47,6 +47,14 @@ namespace Registro_de_huespedes.Views
 			
 			MessageBox.Show("Ingrese un modelo");
 			
+			}
+			else if (txtFoliodelhuesped.Text=="")
+			{
+				MessageBox.Show("Ingrese un folio");
+			}
+			else if (txtDescripcionauto.Text=="")
+			{
+				MessageBox.Show("Ingrese una descripcion");
 			}
 			
 			else{
