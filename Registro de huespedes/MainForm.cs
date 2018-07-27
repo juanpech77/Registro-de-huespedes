@@ -65,6 +65,12 @@ namespace Registro_de_huespedes
 			frmBuscarAutos ODatoscarhuesped = new frmBuscarAutos();
 			ODatoscarhuesped.ShowDialog();
 		}
+		void MnuRegistrosGuClick(object sender, EventArgs e)
+		{
+			FrmRegistrosguardados oVerregistros = new FrmRegistrosguardados();
+			oVerregistros.MdiParent=this;
+			oVerregistros.Show();
+		}
 		
 	}
 }

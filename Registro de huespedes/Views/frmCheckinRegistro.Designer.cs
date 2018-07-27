@@ -82,7 +82,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// groupBox3
 			// 
-			this.groupBox3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.groupBox3.BackColor = System.Drawing.Color.DeepSkyBlue;
 			this.groupBox3.Controls.Add(this.btnRegistrarcuandoyaexista);
 			this.groupBox3.Controls.Add(this.cmbElijirhuespedsiexiste);
 			this.groupBox3.Controls.Add(this.btnAgregarnewdatos);
@@ -112,7 +112,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// btnRegistrarcuandoyaexista
 			// 
-			this.btnRegistrarcuandoyaexista.Location = new System.Drawing.Point(248, 348);
+			this.btnRegistrarcuandoyaexista.Location = new System.Drawing.Point(306, 348);
 			this.btnRegistrarcuandoyaexista.Name = "btnRegistrarcuandoyaexista";
 			this.btnRegistrarcuandoyaexista.Size = new System.Drawing.Size(219, 32);
 			this.btnRegistrarcuandoyaexista.TabIndex = 50;
@@ -125,12 +125,12 @@ namespace Registro_de_huespedes.Views
 			this.cmbElijirhuespedsiexiste.FormattingEnabled = true;
 			this.cmbElijirhuespedsiexiste.Location = new System.Drawing.Point(6, 353);
 			this.cmbElijirhuespedsiexiste.Name = "cmbElijirhuespedsiexiste";
-			this.cmbElijirhuespedsiexiste.Size = new System.Drawing.Size(205, 24);
+			this.cmbElijirhuespedsiexiste.Size = new System.Drawing.Size(271, 24);
 			this.cmbElijirhuespedsiexiste.TabIndex = 49;
 			// 
 			// btnAgregarnewdatos
 			// 
-			this.btnAgregarnewdatos.Location = new System.Drawing.Point(46, 405);
+			this.btnAgregarnewdatos.Location = new System.Drawing.Point(306, 404);
 			this.btnAgregarnewdatos.Name = "btnAgregarnewdatos";
 			this.btnAgregarnewdatos.Size = new System.Drawing.Size(219, 32);
 			this.btnAgregarnewdatos.TabIndex = 48;
@@ -272,6 +272,7 @@ namespace Registro_de_huespedes.Views
 			this.Controls.Add(this.groupBox3);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmCheckinRegistro";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmCheckinRegistro";
 			this.Load += new System.EventHandler(this.FrmCheckinRegistroLoad);
 			this.groupBox3.ResumeLayout(false);

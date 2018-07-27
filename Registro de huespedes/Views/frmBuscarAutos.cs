@@ -40,20 +40,36 @@ namespace Registro_de_huespedes.Views
 		}
 		void BtnGuardarClick(object sender, EventArgs e)
 		{
-			OBusca.matricula=txtMatriculacar.Text;
-			OBusca.modelo=txtModelocar.Text;
-			OBusca.folio=txtFoliocar.Text;
-			OBusca.descripcion=txtDescripcioncar.Text;
-			OBusca.agregarauto();
-			OBusca.Buscarautos(txtBuscarautos.Text,dgvDatoscar);
-			txtMatriculacar.Clear();
-			txtModelocar.Clear();
-			txtDescripcioncar.Clear();
-			MessageBox.Show("Datos Registrados Con Exito","Registro Exitoso",MessageBoxButtons.OK,MessageBoxIcon.Information);
+			 if(txtMatriculacar.Text !="" && txtModelocar.Text !="" && txtFoliocar.Text !="" )
+			{
+			 	
+			 	OBusca.matricula=txtMatriculacar.Text;
+			 	OBusca.modelo=txtModelocar.Text;
+				OBusca.folio=txtFoliocar.Text;
+				OBusca.descripcion=txtDescripcioncar.Text;
+				OBusca.agregarauto();
+				OBusca.Buscarautos(txtBuscarautos.Text,dgvDatoscar);
+				txtMatriculacar.Clear();
+				txtModelocar.Clear();
+				txtDescripcioncar.Clear();
+				txtFoliocar.Clear();
+				MessageBox.Show("Datos Registrados Con Exito","Registro Exitoso",MessageBoxButtons.OK,MessageBoxIcon.Information);
+			}
+			 
+			 
+			else
+			{
+			 	MessageBox.Show("Igrese todos los datos para registrarse");
+				
+			}	
+			
+
+			
+			
 		}
 		void BtnEliminacarClick(object sender, EventArgs e)
 		{
-			if (MessageBox.Show("Estas seguro de Eliminar","Cuidado",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation)==DialogResult.Yes) 
+			if (MessageBox.Show("Estas seguro de Eliminar","Cuidado",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation)==DialogResult.Yes);
 			{
 				string clave = dgvDatoscar[0,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
 				OBusca.Eliminarautos(clave);
@@ -62,27 +78,46 @@ namespace Registro_de_huespedes.Views
 		}
 		void BtnEditarcarClick(object sender, EventArgs e)
 		{
-			txtMatriculacar.Text = dgvDatoscar[0,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
-			txtModelocar.Text = dgvDatoscar[1,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
-			txtDescripcioncar.Text = dgvDatoscar[3,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
-			txtFoliocar.Text = dgvDatoscar[2,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
-			txtBuscarautos.Focus();
-			btnGuardarcarU.Visible=true;
-			btnGuardar.Visible=false;
+			
+				txtMatriculacar.Text = dgvDatoscar[0,dgvDatoscar.CurrentCellAddress.Y].Value.ToString(); 
+				txtMatriculacar.Tag = dgvDatoscar[0,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();//id visisble
+				txtModelocar.Text = dgvDatoscar[1,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
+				txtDescripcioncar.Text = dgvDatoscar[3,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
+				txtFoliocar.Text = dgvDatoscar[2,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
+				btnGuardarcarU.Visible=true;
+				btnGuardar.Visible=false;
+			
+			
 		}
 		void BtnGuardarcarUClick(object sender, EventArgs e)
 		{
-			OBusca.Actualizarautos(txtMatriculacar.Text,txtModelocar.Text,txtDescripcioncar.Text);
 			OBusca.Buscarautos(txtBuscarautos.Text,dgvDatoscar);//actualizamos el datagrid
-			txtMatriculacar.Clear();
-			txtModelocar.Clear();
-			txtDescripcioncar.Clear();
-			btnGuardarcarU.Visible=false;
-			btnGuardar.Visible=true;
+			if (txtModelocar.Text!="" && txtFoliocar.Text!="")
+			{
+				OBusca.Actualizarautos(txtMatriculacar.Text,txtModelocar.Text,txtFoliocar.Text,txtDescripcioncar.Text,txtMatriculacar.Tag.ToString());
+			
+				btnGuardarcarU.Visible=false;
+				btnGuardar.Visible=true;
+				MessageBox.Show("Datos Agregados Correctamente","Registro",MessageBoxButtons.OK,MessageBoxIcon.Information);	
+			}
+			else 
+			{
+				MessageBox.Show("Igrese todos los datos para registrarse");
+			}
+			
+				txtMatriculacar.Clear();
+				txtModelocar.Clear();
+				txtFoliocar.Clear();
+				txtDescripcioncar.Clear();
+		
 		}
 		void Button1Click(object sender, EventArgs e)
 		{
 			dataGridView1.Visible=true;
+		}
+		void DgvDatoscarCellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+	
 		}
 	
 		

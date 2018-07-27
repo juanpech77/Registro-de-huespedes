@@ -112,6 +112,7 @@ namespace Registro_de_huespedes.Views
 			this.button1.TabIndex = 16;
 			this.button1.Text = "Editar";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Visible = false;
 			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// dataGridView1
@@ -136,11 +137,11 @@ namespace Registro_de_huespedes.Views
 			this.txtFoliocar.Location = new System.Drawing.Point(100, 144);
 			this.txtFoliocar.Name = "txtFoliocar";
 			this.txtFoliocar.Size = new System.Drawing.Size(147, 22);
-			this.txtFoliocar.TabIndex = 13;
+			this.txtFoliocar.TabIndex = 3;
 			// 
 			// btnGuardarcarU
 			// 
-			this.btnGuardarcarU.Location = new System.Drawing.Point(42, 414);
+			this.btnGuardarcarU.Location = new System.Drawing.Point(66, 365);
 			this.btnGuardarcarU.Name = "btnGuardarcarU";
 			this.btnGuardarcarU.Size = new System.Drawing.Size(75, 23);
 			this.btnGuardarcarU.TabIndex = 12;
@@ -175,10 +176,11 @@ namespace Registro_de_huespedes.Views
 			this.dgvDatoscar.Name = "dgvDatoscar";
 			this.dgvDatoscar.Size = new System.Drawing.Size(495, 150);
 			this.dgvDatoscar.TabIndex = 9;
+			this.dgvDatoscar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDatoscarCellContentClick);
 			// 
 			// btnGuardar
 			// 
-			this.btnGuardar.Location = new System.Drawing.Point(42, 365);
+			this.btnGuardar.Location = new System.Drawing.Point(66, 365);
 			this.btnGuardar.Name = "btnGuardar";
 			this.btnGuardar.Size = new System.Drawing.Size(75, 23);
 			this.btnGuardar.TabIndex = 8;
@@ -193,21 +195,21 @@ namespace Registro_de_huespedes.Views
 			this.txtDescripcioncar.Name = "txtDescripcioncar";
 			this.txtDescripcioncar.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 			this.txtDescripcioncar.Size = new System.Drawing.Size(284, 71);
-			this.txtDescripcioncar.TabIndex = 7;
+			this.txtDescripcioncar.TabIndex = 4;
 			// 
 			// txtModelocar
 			// 
 			this.txtModelocar.Location = new System.Drawing.Point(100, 102);
 			this.txtModelocar.Name = "txtModelocar";
 			this.txtModelocar.Size = new System.Drawing.Size(147, 22);
-			this.txtModelocar.TabIndex = 6;
+			this.txtModelocar.TabIndex = 2;
 			// 
 			// txtMatriculacar
 			// 
 			this.txtMatriculacar.Location = new System.Drawing.Point(100, 70);
 			this.txtMatriculacar.Name = "txtMatriculacar";
 			this.txtMatriculacar.Size = new System.Drawing.Size(147, 22);
-			this.txtMatriculacar.TabIndex = 5;
+			this.txtMatriculacar.TabIndex = 1;
 			// 
 			// label4
 			// 
@@ -238,7 +240,7 @@ namespace Registro_de_huespedes.Views
 			this.txtBuscarautos.Location = new System.Drawing.Point(100, 28);
 			this.txtBuscarautos.Name = "txtBuscarautos";
 			this.txtBuscarautos.Size = new System.Drawing.Size(244, 22);
-			this.txtBuscarautos.TabIndex = 1;
+			this.txtBuscarautos.TabIndex = 0;
 			this.txtBuscarautos.TextChanged += new System.EventHandler(this.TxtBuscarautosTextChanged);
 			// 
 			// label1

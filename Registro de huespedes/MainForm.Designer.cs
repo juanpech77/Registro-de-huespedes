@@ -17,8 +17,6 @@ namespace Registro_de_huespedes
 		private System.Windows.Forms.StatusStrip statusStrip1;
 		private System.Windows.Forms.ToolStripStatusLabel lblRol;
 		private System.Windows.Forms.ToolStripStatusLabel lblUsuario;
-		private System.Windows.Forms.Panel PanBarraTitulo;
-		private System.Windows.Forms.PictureBox PBDesplazaMenu;
 		private System.Windows.Forms.Panel PanMenuVertical;
 		private System.Windows.Forms.Button btnRegistrarHuesped;
 		private System.Windows.Forms.Button btnAutomovil;
@@ -29,8 +27,8 @@ namespace Registro_de_huespedes
 		private System.Windows.Forms.ToolStripMenuItem ingresosToolStripMenuItem;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.ToolStripMenuItem recargosToolStripMenuItem;
-		private System.Windows.Forms.ToolStrip toolStrip1;
 		private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem mnuRegistrosGu;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -59,24 +57,20 @@ namespace Registro_de_huespedes
 			this.lblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
 			this.PanMenuVertical = new System.Windows.Forms.Panel();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.PBDesplazaMenu = new System.Windows.Forms.PictureBox();
 			this.btnRegistrarHuesped = new System.Windows.Forms.Button();
 			this.btnAutomovil = new System.Windows.Forms.Button();
 			this.btncheckOut = new System.Windows.Forms.Button();
 			this.bntHabitaciones = new System.Windows.Forms.Button();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.operacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.mnuRegistrosGu = new System.Windows.Forms.ToolStripMenuItem();
 			this.ingresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.recargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.PanBarraTitulo = new System.Windows.Forms.Panel();
-			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
 			this.statusStrip1.SuspendLayout();
 			this.PanMenuVertical.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.PBDesplazaMenu)).BeginInit();
 			this.menuStrip1.SuspendLayout();
-			this.PanBarraTitulo.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// statusStrip1
@@ -84,9 +78,9 @@ namespace Registro_de_huespedes
 			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 			this.lblRol,
 			this.lblUsuario});
-			this.statusStrip1.Location = new System.Drawing.Point(0, 398);
+			this.statusStrip1.Location = new System.Drawing.Point(0, 566);
 			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.Size = new System.Drawing.Size(776, 22);
+			this.statusStrip1.Size = new System.Drawing.Size(779, 22);
 			this.statusStrip1.TabIndex = 0;
 			this.statusStrip1.Text = "statusStrip1";
 			// 
@@ -102,55 +96,44 @@ namespace Registro_de_huespedes
 			// 
 			// PanMenuVertical
 			// 
-			this.PanMenuVertical.BackColor = System.Drawing.Color.Maroon;
+			this.PanMenuVertical.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			| System.Windows.Forms.AnchorStyles.Left)));
+			this.PanMenuVertical.AutoSize = true;
+			this.PanMenuVertical.BackColor = System.Drawing.Color.Crimson;
 			this.PanMenuVertical.Controls.Add(this.pictureBox1);
-			this.PanMenuVertical.Controls.Add(this.PBDesplazaMenu);
 			this.PanMenuVertical.Controls.Add(this.btnRegistrarHuesped);
 			this.PanMenuVertical.Controls.Add(this.btnAutomovil);
 			this.PanMenuVertical.Controls.Add(this.btncheckOut);
 			this.PanMenuVertical.Controls.Add(this.bntHabitaciones);
-			this.PanMenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
 			this.PanMenuVertical.Location = new System.Drawing.Point(0, 24);
 			this.PanMenuVertical.Name = "PanMenuVertical";
-			this.PanMenuVertical.Size = new System.Drawing.Size(159, 374);
+			this.PanMenuVertical.Size = new System.Drawing.Size(156, 539);
 			this.PanMenuVertical.TabIndex = 3;
 			// 
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(6, 13);
+			this.pictureBox1.Location = new System.Drawing.Point(6, 15);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(147, 63);
+			this.pictureBox1.Size = new System.Drawing.Size(144, 51);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 3;
 			this.pictureBox1.TabStop = false;
-			// 
-			// PBDesplazaMenu
-			// 
-			this.PBDesplazaMenu.Image = ((System.Drawing.Image)(resources.GetObject("PBDesplazaMenu.Image")));
-			this.PBDesplazaMenu.ImageLocation = "";
-			this.PBDesplazaMenu.Location = new System.Drawing.Point(33, 305);
-			this.PBDesplazaMenu.Name = "PBDesplazaMenu";
-			this.PBDesplazaMenu.Size = new System.Drawing.Size(66, 49);
-			this.PBDesplazaMenu.TabIndex = 0;
-			this.PBDesplazaMenu.TabStop = false;
-			this.PBDesplazaMenu.Visible = false;
-			this.PBDesplazaMenu.Click += new System.EventHandler(this.PBDesplazaMenuClick);
 			// 
 			// btnRegistrarHuesped
 			// 
 			this.btnRegistrarHuesped.FlatAppearance.BorderSize = 0;
 			this.btnRegistrarHuesped.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
 			this.btnRegistrarHuesped.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnRegistrarHuesped.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnRegistrarHuesped.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnRegistrarHuesped.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btnRegistrarHuesped.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrarHuesped.Image")));
-			this.btnRegistrarHuesped.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnRegistrarHuesped.Location = new System.Drawing.Point(9, 82);
+			this.btnRegistrarHuesped.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnRegistrarHuesped.Location = new System.Drawing.Point(26, 86);
 			this.btnRegistrarHuesped.Name = "btnRegistrarHuesped";
-			this.btnRegistrarHuesped.Size = new System.Drawing.Size(141, 40);
+			this.btnRegistrarHuesped.Size = new System.Drawing.Size(112, 93);
 			this.btnRegistrarHuesped.TabIndex = 0;
-			this.btnRegistrarHuesped.Text = "Registrar \r\ncliente";
+			this.btnRegistrarHuesped.Text = "\r\n\r\nRegistrar \r\ncliente";
 			this.btnRegistrarHuesped.UseVisualStyleBackColor = true;
 			this.btnRegistrarHuesped.Click += new System.EventHandler(this.BtnRegistrarHuespedClick);
 			// 
@@ -159,15 +142,15 @@ namespace Registro_de_huespedes
 			this.btnAutomovil.FlatAppearance.BorderSize = 0;
 			this.btnAutomovil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
 			this.btnAutomovil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnAutomovil.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAutomovil.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnAutomovil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btnAutomovil.Image = ((System.Drawing.Image)(resources.GetObject("btnAutomovil.Image")));
-			this.btnAutomovil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnAutomovil.Location = new System.Drawing.Point(6, 240);
+			this.btnAutomovil.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnAutomovil.Location = new System.Drawing.Point(6, 413);
 			this.btnAutomovil.Name = "btnAutomovil";
-			this.btnAutomovil.Size = new System.Drawing.Size(144, 43);
+			this.btnAutomovil.Size = new System.Drawing.Size(144, 88);
 			this.btnAutomovil.TabIndex = 2;
-			this.btnAutomovil.Text = "  Huesped con\r\nautomovil";
+			this.btnAutomovil.Text = "  \r\n\r\nHuesped con\r\n   automovil";
 			this.btnAutomovil.UseVisualStyleBackColor = true;
 			this.btnAutomovil.Click += new System.EventHandler(this.BtnAutomovilClick);
 			// 
@@ -176,15 +159,15 @@ namespace Registro_de_huespedes
 			this.btncheckOut.FlatAppearance.BorderSize = 0;
 			this.btncheckOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
 			this.btncheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btncheckOut.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btncheckOut.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btncheckOut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btncheckOut.Image = ((System.Drawing.Image)(resources.GetObject("btncheckOut.Image")));
-			this.btncheckOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btncheckOut.Location = new System.Drawing.Point(6, 143);
+			this.btncheckOut.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btncheckOut.Location = new System.Drawing.Point(12, 195);
 			this.btncheckOut.Name = "btncheckOut";
-			this.btncheckOut.Size = new System.Drawing.Size(135, 41);
+			this.btncheckOut.Size = new System.Drawing.Size(135, 73);
 			this.btncheckOut.TabIndex = 1;
-			this.btncheckOut.Text = "Ceck-out";
+			this.btncheckOut.Text = "\r\n\r\nCeck-out";
 			this.btncheckOut.UseVisualStyleBackColor = true;
 			// 
 			// bntHabitaciones
@@ -192,15 +175,15 @@ namespace Registro_de_huespedes
 			this.bntHabitaciones.FlatAppearance.BorderSize = 0;
 			this.bntHabitaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
 			this.bntHabitaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.bntHabitaciones.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bntHabitaciones.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.bntHabitaciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.bntHabitaciones.Image = ((System.Drawing.Image)(resources.GetObject("bntHabitaciones.Image")));
-			this.bntHabitaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.bntHabitaciones.Location = new System.Drawing.Point(6, 190);
+			this.bntHabitaciones.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.bntHabitaciones.Location = new System.Drawing.Point(6, 303);
 			this.bntHabitaciones.Name = "bntHabitaciones";
-			this.bntHabitaciones.Size = new System.Drawing.Size(144, 34);
+			this.bntHabitaciones.Size = new System.Drawing.Size(144, 65);
 			this.bntHabitaciones.TabIndex = 1;
-			this.bntHabitaciones.Text = "    Habitaciones";
+			this.bntHabitaciones.Text = "    \r\n\r\nHabitaciones";
 			this.bntHabitaciones.UseVisualStyleBackColor = true;
 			// 
 			// menuStrip1
@@ -212,59 +195,55 @@ namespace Registro_de_huespedes
 			this.ayudaToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(776, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(779, 24);
 			this.menuStrip1.TabIndex = 6;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
 			// operacionesToolStripMenuItem
 			// 
+			this.operacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.mnuRegistrosGu});
+			this.operacionesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("operacionesToolStripMenuItem.Image")));
 			this.operacionesToolStripMenuItem.Name = "operacionesToolStripMenuItem";
-			this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-			this.operacionesToolStripMenuItem.Text = "Operaciones";
+			this.operacionesToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+			this.operacionesToolStripMenuItem.Text = "Registry";
+			// 
+			// mnuRegistrosGu
+			// 
+			this.mnuRegistrosGu.Image = ((System.Drawing.Image)(resources.GetObject("mnuRegistrosGu.Image")));
+			this.mnuRegistrosGu.Name = "mnuRegistrosGu";
+			this.mnuRegistrosGu.Size = new System.Drawing.Size(182, 22);
+			this.mnuRegistrosGu.Text = "Registros Guardados";
+			this.mnuRegistrosGu.Click += new System.EventHandler(this.MnuRegistrosGuClick);
 			// 
 			// ingresosToolStripMenuItem
 			// 
 			this.ingresosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ingresosToolStripMenuItem.Image")));
 			this.ingresosToolStripMenuItem.Name = "ingresosToolStripMenuItem";
-			this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-			this.ingresosToolStripMenuItem.Text = "Ingresos";
+			this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+			this.ingresosToolStripMenuItem.Text = "Income";
 			// 
 			// recargosToolStripMenuItem
 			// 
+			this.recargosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("recargosToolStripMenuItem.Image")));
 			this.recargosToolStripMenuItem.Name = "recargosToolStripMenuItem";
-			this.recargosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-			this.recargosToolStripMenuItem.Text = "Recargos";
+			this.recargosToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+			this.recargosToolStripMenuItem.Text = "Surcharges";
 			// 
 			// ayudaToolStripMenuItem
 			// 
 			this.ayudaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ayudaToolStripMenuItem.Image")));
 			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-			this.ayudaToolStripMenuItem.Text = "Ayuda";
-			// 
-			// PanBarraTitulo
-			// 
-			this.PanBarraTitulo.Controls.Add(this.toolStrip1);
-			this.PanBarraTitulo.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.PanBarraTitulo.Location = new System.Drawing.Point(159, 24);
-			this.PanBarraTitulo.Name = "PanBarraTitulo";
-			this.PanBarraTitulo.Size = new System.Drawing.Size(617, 374);
-			this.PanBarraTitulo.TabIndex = 4;
-			// 
-			// toolStrip1
-			// 
-			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-			this.toolStrip1.Name = "toolStrip1";
-			this.toolStrip1.Size = new System.Drawing.Size(617, 25);
-			this.toolStrip1.TabIndex = 1;
-			this.toolStrip1.Text = "toolStrip1";
+			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+			this.ayudaToolStripMenuItem.Text = "help";
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(776, 420);
-			this.Controls.Add(this.PanBarraTitulo);
+			this.BackColor = System.Drawing.Color.White;
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.ClientSize = new System.Drawing.Size(779, 588);
 			this.Controls.Add(this.PanMenuVertical);
 			this.Controls.Add(this.statusStrip1);
 			this.Controls.Add(this.menuStrip1);
@@ -278,11 +257,8 @@ namespace Registro_de_huespedes
 			this.statusStrip1.PerformLayout();
 			this.PanMenuVertical.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.PBDesplazaMenu)).EndInit();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
-			this.PanBarraTitulo.ResumeLayout(false);
-			this.PanBarraTitulo.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

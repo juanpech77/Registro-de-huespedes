@@ -81,9 +81,9 @@ namespace Registro_de_huespedes.Views
 				addnuevoregistro.hora_registro=dtpHoraderegistro.Value.ToString("HH:mm:ss");
 				addnuevoregistro.numero_habitacion=Convert.ToInt32(txtNumerohabitacion.Text);
 				addnuevoregistro.idusu = Convert.ToInt32(cmbElijirhuespedsiexiste.SelectedValue.ToString());//elejir dato del huesped si existe
-					addnuevoregistro.addregistronuevo();
-					clearegistro();
-					MessageBox.Show("Datos Registrados Con Exito","Registro",MessageBoxButtons.OK,MessageBoxIcon.Information);
+				addnuevoregistro.addregistronuevo();
+				clearegistro();
+				MessageBox.Show("Datos Registrados Con Exito","Registro",MessageBoxButtons.OK,MessageBoxIcon.Information);
 			}
 			
 		}//termina el evento clik

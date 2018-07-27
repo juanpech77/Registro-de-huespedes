@@ -28,18 +28,19 @@ namespace Registro_de_huespedes.Controladores
 		{
 		}
 		
-		public void agregarauto()//viene la inserccion mediante el formulario de agregar huesped
-		{
-			string sql = string.Format("INSERT INTO autos_clientes(modelo,descripcion,matricula,folio)VALUES ('{0}','{1}','{2}','{3}')",
-			                          modelo,descripcion, matricula,folio);
-			FrameBD.SQLIDU(sql);
-		}
 		
-		public void Buscarautos(string matri, DataGridView dgv)
+		
+		public void Buscarautos(string matri, DataGridView dgv)//buscar autos 
 		{
 			string sql = "SELECT * FROM autos_clientes WHERE matricula LIKE'" + matri + "%'";
 			dgv.DataSource = FrameBD.SQLSEL(sql);
 			dgv.DataMember = "datos";
+		}
+		public void agregarauto()//viene la inserccion mediante el formulario de agregar huesped
+		{
+			string sql = string.Format("INSERT INTO autos_clientes(matricula,modelo,folio,descripcion)VALUES ('{0}','{1}','{2}','{3}')",
+			                          matricula,modelo,folio,descripcion);
+			FrameBD.SQLIDU(sql);
 		}
 		
 		public void Eliminarautos( string idauto)
@@ -48,9 +49,9 @@ namespace Registro_de_huespedes.Controladores
 			FrameBD.SQLIDU(sql);
 		}
 		
-		public void Actualizarautos( string mat, string mod,string des)
+		public void Actualizarautos( string mat, string mod,string des,string fo,string copiamat)
 		{
-			string sql = string.Format("UPDATE autos_clientes SET matricula='{0}', modelo='{1}',descripcion='{2}' WHERE matricula='{0}';",mat,mod,des);
+			string sql = string.Format("UPDATE autos_clientes SET matricula='{0}', modelo='{1}',descripcion='{2}',folio='{3}' WHERE matricula='{4}';",mat,mod,des,fo,copiamat);
 			FrameBD.SQLIDU(sql);
 		}
 		/*public void Storeautos()

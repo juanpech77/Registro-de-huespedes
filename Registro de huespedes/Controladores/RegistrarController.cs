@@ -72,7 +72,7 @@ namespace Registro_de_huespedes.Controladores
             return res;
 
             
-        }
+        }//TERMINA ESTE METODO
 		  
 		  public void addregistronuevo()//formulario cuando se de click Registrar cliente
 		  {
@@ -84,16 +84,17 @@ namespace Registro_de_huespedes.Controladores
 		  public void getdatoshuespedesexistentes(ComboBox cmb)//obtener los datos, no inporta como se llame el combobox afuera
 		  {
 		  	//PASO 1: definimos los datos que llenaran al combobox
-		  	string buscarid = "SELECT idusu,nombre,apellido_p,apellido_m FROM huespedes";
+		  	string buscarid = "SELECT idusu,CONCAT(nombre,' ',apellido_p,' ',apellido_m) as huesped FROM huespedes";
 		  	
+		  	FrameBD.comboComplete(buscarid,cmb,"huesped","idusu");
 		  	//PASO 2: vinculamos los datos al Datasoource
-		  	cmb.DataSource=FrameBD.SQLCOMBO(buscarid);
+		  	//cmb.DataSource=FrameBD.SQLCOMBO(buscarid);
 		  	
 		  	//PASO 3 : especificar el valor a mostrar al usuario
-		  	cmb.DisplayMember="nombre,apellido_p,apellido_m";
+		  	//cmb.DisplayMember="huesped";
 		  	
 		  	//PASO 4: Definir la clave primaria
-		  	cmb.ValueMember="idusu";
+		  	//cmb.ValueMember="idusu";
 		  	
 		  }
 	}

@@ -87,6 +87,10 @@
     <Compile Include="Views\frmRegistrarAuto.Designer.cs">
       <DependentUpon>frmRegistrarAuto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FrmRegistrosguardados.cs" />
+    <Compile Include="Views\FrmRegistrosguardados.Designer.cs">
+      <DependentUpon>FrmRegistrosguardados.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -109,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmRegistrarAuto.resx">
       <DependentUpon>frmRegistrarAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmRegistrosguardados.resx">
+      <DependentUpon>FrmRegistrosguardados.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
