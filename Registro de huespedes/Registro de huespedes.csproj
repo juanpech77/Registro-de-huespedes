@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Controladores\RegistrarAutosController.cs" />
     <Compile Include="Controladores\RegistrarController.cs" />
+    <Compile Include="Controladores\RegistrarUusariosController.cs" />
     <Compile Include="FrameBD.cs" />
     <Compile Include="frmInicioLogin.cs">
       <SubType>Form</SubType>
@@ -91,6 +92,10 @@
     <Compile Include="Views\FrmRegistrosguardados.Designer.cs">
       <DependentUpon>FrmRegistrosguardados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmVerUsuarios.cs" />
+    <Compile Include="Views\frmVerUsuarios.Designer.cs">
+      <DependentUpon>frmVerUsuarios.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -116,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmRegistrosguardados.resx">
       <DependentUpon>FrmRegistrosguardados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmVerUsuarios.resx">
+      <DependentUpon>frmVerUsuarios.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -26,6 +26,7 @@ namespace Registro_de_huespedes
 		private System.Windows.Forms.Label lblFecha;
 		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.Button btnSalirdelogin;
+		private System.Windows.Forms.ToolTip toolTip1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -62,6 +63,7 @@ namespace Registro_de_huespedes
 			this.tmrFechahora = new System.Windows.Forms.Timer(this.components);
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.btnSalirdelogin = new System.Windows.Forms.Button();
+			this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
@@ -118,6 +120,7 @@ namespace Registro_de_huespedes
 			this.btnIngresarlogin.Size = new System.Drawing.Size(100, 30);
 			this.btnIngresarlogin.TabIndex = 6;
 			this.btnIngresarlogin.Text = "Ingresar";
+			this.toolTip1.SetToolTip(this.btnIngresarlogin, "Clic Para Ingresar");
 			this.btnIngresarlogin.UseVisualStyleBackColor = true;
 			this.btnIngresarlogin.Click += new System.EventHandler(this.BtnIngresarloginClick);
 			this.btnIngresarlogin.MouseLeave += new System.EventHandler(this.BtnIngresarloginMouseLeave);

@@ -29,6 +29,8 @@ namespace Registro_de_huespedes
 		private System.Windows.Forms.ToolStripMenuItem recargosToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem mnuRegistrosGu;
+		private System.Windows.Forms.ToolStripMenuItem administracionToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem mnuAgregarUsuario;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -67,6 +69,8 @@ namespace Registro_de_huespedes
 			this.ingresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.recargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.administracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.mnuAgregarUsuario = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusStrip1.SuspendLayout();
 			this.PanMenuVertical.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -167,7 +171,7 @@ namespace Registro_de_huespedes
 			this.btncheckOut.Name = "btncheckOut";
 			this.btncheckOut.Size = new System.Drawing.Size(135, 73);
 			this.btncheckOut.TabIndex = 1;
-			this.btncheckOut.Text = "\r\n\r\nCeck-out";
+			this.btncheckOut.Text = "\r\n\r\nCheckout";
 			this.btncheckOut.UseVisualStyleBackColor = true;
 			// 
 			// bntHabitaciones
@@ -190,8 +194,9 @@ namespace Registro_de_huespedes
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 			this.operacionesToolStripMenuItem,
-			this.ingresosToolStripMenuItem,
 			this.recargosToolStripMenuItem,
+			this.ingresosToolStripMenuItem,
+			this.administracionToolStripMenuItem,
 			this.ayudaToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
@@ -236,6 +241,23 @@ namespace Registro_de_huespedes
 			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
 			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
 			this.ayudaToolStripMenuItem.Text = "help";
+			// 
+			// administracionToolStripMenuItem
+			// 
+			this.administracionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.mnuAgregarUsuario});
+			this.administracionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("administracionToolStripMenuItem.Image")));
+			this.administracionToolStripMenuItem.Name = "administracionToolStripMenuItem";
+			this.administracionToolStripMenuItem.Size = new System.Drawing.Size(181, 20);
+			this.administracionToolStripMenuItem.Text = "Administracion De Usuarios";
+			// 
+			// mnuAgregarUsuario
+			// 
+			this.mnuAgregarUsuario.Image = ((System.Drawing.Image)(resources.GetObject("mnuAgregarUsuario.Image")));
+			this.mnuAgregarUsuario.Name = "mnuAgregarUsuario";
+			this.mnuAgregarUsuario.Size = new System.Drawing.Size(165, 22);
+			this.mnuAgregarUsuario.Text = "Agreagar Usuario";
+			this.mnuAgregarUsuario.Click += new System.EventHandler(this.MnuAgregarUsuarioClick);
 			// 
 			// MainForm
 			// 

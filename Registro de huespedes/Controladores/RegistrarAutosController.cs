@@ -49,7 +49,7 @@ namespace Registro_de_huespedes.Controladores
 			FrameBD.SQLIDU(sql);
 		}
 		
-		public void Actualizarautos( string mat, string mod,string des,string fo,string copiamat)
+		public void Actualizarautos( string mat, string mod,string des,string fo,string copiamat)//COPIAMAT PK INVISIBLE
 		{
 			string sql = string.Format("UPDATE autos_clientes SET matricula='{0}', modelo='{1}',descripcion='{2}',folio='{3}' WHERE matricula='{4}';",mat,mod,des,fo,copiamat);
 			FrameBD.SQLIDU(sql);

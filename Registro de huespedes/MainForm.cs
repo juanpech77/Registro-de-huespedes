@@ -71,6 +71,12 @@ namespace Registro_de_huespedes
 			oVerregistros.MdiParent=this;
 			oVerregistros.Show();
 		}
+		void MnuAgregarUsuarioClick(object sender, EventArgs e)
+		{
+			frmVerUsuarios Ousuarioo = new frmVerUsuarios();
+			Ousuarioo.MdiParent=this;
+			Ousuarioo.Show();
+		}
 		
 	}
 }

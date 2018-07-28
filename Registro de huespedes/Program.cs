@@ -24,7 +24,7 @@ namespace Registro_de_huespedes
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FrmInicioLogin());
+			Application.Run(new MainForm());
 		}
 		
 	}
