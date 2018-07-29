@@ -66,11 +66,11 @@ namespace Registro_de_huespedes
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.operacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuRegistrosGu = new System.Windows.Forms.ToolStripMenuItem();
-			this.ingresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.recargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.ingresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.administracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuAgregarUsuario = new System.Windows.Forms.ToolStripMenuItem();
+			this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusStrip1.SuspendLayout();
 			this.PanMenuVertical.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -103,7 +103,7 @@ namespace Registro_de_huespedes
 			this.PanMenuVertical.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
 			| System.Windows.Forms.AnchorStyles.Left)));
 			this.PanMenuVertical.AutoSize = true;
-			this.PanMenuVertical.BackColor = System.Drawing.Color.Crimson;
+			this.PanMenuVertical.BackColor = System.Drawing.Color.MidnightBlue;
 			this.PanMenuVertical.Controls.Add(this.pictureBox1);
 			this.PanMenuVertical.Controls.Add(this.btnRegistrarHuesped);
 			this.PanMenuVertical.Controls.Add(this.btnAutomovil);
@@ -117,9 +117,9 @@ namespace Registro_de_huespedes
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(6, 15);
+			this.pictureBox1.Location = new System.Drawing.Point(3, 3);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(144, 51);
+			this.pictureBox1.Size = new System.Drawing.Size(147, 83);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 3;
 			this.pictureBox1.TabStop = false;
@@ -133,7 +133,7 @@ namespace Registro_de_huespedes
 			this.btnRegistrarHuesped.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btnRegistrarHuesped.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrarHuesped.Image")));
 			this.btnRegistrarHuesped.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnRegistrarHuesped.Location = new System.Drawing.Point(26, 86);
+			this.btnRegistrarHuesped.Location = new System.Drawing.Point(28, 126);
 			this.btnRegistrarHuesped.Name = "btnRegistrarHuesped";
 			this.btnRegistrarHuesped.Size = new System.Drawing.Size(112, 93);
 			this.btnRegistrarHuesped.TabIndex = 0;
@@ -150,7 +150,7 @@ namespace Registro_de_huespedes
 			this.btnAutomovil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btnAutomovil.Image = ((System.Drawing.Image)(resources.GetObject("btnAutomovil.Image")));
 			this.btnAutomovil.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnAutomovil.Location = new System.Drawing.Point(6, 413);
+			this.btnAutomovil.Location = new System.Drawing.Point(6, 438);
 			this.btnAutomovil.Name = "btnAutomovil";
 			this.btnAutomovil.Size = new System.Drawing.Size(144, 88);
 			this.btnAutomovil.TabIndex = 2;
@@ -167,7 +167,7 @@ namespace Registro_de_huespedes
 			this.btncheckOut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btncheckOut.Image = ((System.Drawing.Image)(resources.GetObject("btncheckOut.Image")));
 			this.btncheckOut.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btncheckOut.Location = new System.Drawing.Point(12, 195);
+			this.btncheckOut.Location = new System.Drawing.Point(15, 235);
 			this.btncheckOut.Name = "btncheckOut";
 			this.btncheckOut.Size = new System.Drawing.Size(135, 73);
 			this.btncheckOut.TabIndex = 1;
@@ -183,7 +183,7 @@ namespace Registro_de_huespedes
 			this.bntHabitaciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.bntHabitaciones.Image = ((System.Drawing.Image)(resources.GetObject("bntHabitaciones.Image")));
 			this.bntHabitaciones.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.bntHabitaciones.Location = new System.Drawing.Point(6, 303);
+			this.bntHabitaciones.Location = new System.Drawing.Point(6, 337);
 			this.bntHabitaciones.Name = "bntHabitaciones";
 			this.bntHabitaciones.Size = new System.Drawing.Size(144, 65);
 			this.bntHabitaciones.TabIndex = 1;
@@ -221,13 +221,6 @@ namespace Registro_de_huespedes
 			this.mnuRegistrosGu.Text = "Registros Guardados";
 			this.mnuRegistrosGu.Click += new System.EventHandler(this.MnuRegistrosGuClick);
 			// 
-			// ingresosToolStripMenuItem
-			// 
-			this.ingresosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ingresosToolStripMenuItem.Image")));
-			this.ingresosToolStripMenuItem.Name = "ingresosToolStripMenuItem";
-			this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-			this.ingresosToolStripMenuItem.Text = "Income";
-			// 
 			// recargosToolStripMenuItem
 			// 
 			this.recargosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("recargosToolStripMenuItem.Image")));
@@ -235,12 +228,12 @@ namespace Registro_de_huespedes
 			this.recargosToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
 			this.recargosToolStripMenuItem.Text = "Surcharges";
 			// 
-			// ayudaToolStripMenuItem
+			// ingresosToolStripMenuItem
 			// 
-			this.ayudaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ayudaToolStripMenuItem.Image")));
-			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-			this.ayudaToolStripMenuItem.Text = "help";
+			this.ingresosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ingresosToolStripMenuItem.Image")));
+			this.ingresosToolStripMenuItem.Name = "ingresosToolStripMenuItem";
+			this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+			this.ingresosToolStripMenuItem.Text = "Income";
 			// 
 			// administracionToolStripMenuItem
 			// 
@@ -258,6 +251,13 @@ namespace Registro_de_huespedes
 			this.mnuAgregarUsuario.Size = new System.Drawing.Size(165, 22);
 			this.mnuAgregarUsuario.Text = "Agreagar Usuario";
 			this.mnuAgregarUsuario.Click += new System.EventHandler(this.MnuAgregarUsuarioClick);
+			// 
+			// ayudaToolStripMenuItem
+			// 
+			this.ayudaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ayudaToolStripMenuItem.Image")));
+			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+			this.ayudaToolStripMenuItem.Text = "help";
 			// 
 			// MainForm
 			// 

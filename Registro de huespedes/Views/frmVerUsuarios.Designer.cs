@@ -78,6 +78,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// gpbUsuarios
 			// 
+			this.gpbUsuarios.BackColor = System.Drawing.Color.Transparent;
 			this.gpbUsuarios.Controls.Add(this.btnGuardarcambios);
 			this.gpbUsuarios.Controls.Add(this.txtModicarusu);
 			this.gpbUsuarios.Controls.Add(this.btnEliminarusu);
@@ -97,13 +98,14 @@ namespace Registro_de_huespedes.Views
 			this.gpbUsuarios.Controls.Add(this.dgvDatosusuarios);
 			this.gpbUsuarios.Location = new System.Drawing.Point(12, 2);
 			this.gpbUsuarios.Name = "gpbUsuarios";
-			this.gpbUsuarios.Size = new System.Drawing.Size(1014, 279);
+			this.gpbUsuarios.Size = new System.Drawing.Size(1019, 319);
 			this.gpbUsuarios.TabIndex = 0;
 			this.gpbUsuarios.TabStop = false;
 			// 
 			// btnGuardarcambios
 			// 
-			this.btnGuardarcambios.Location = new System.Drawing.Point(425, 232);
+			this.btnGuardarcambios.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnGuardarcambios.Location = new System.Drawing.Point(71, 261);
 			this.btnGuardarcambios.Name = "btnGuardarcambios";
 			this.btnGuardarcambios.Size = new System.Drawing.Size(131, 32);
 			this.btnGuardarcambios.TabIndex = 10;
@@ -113,9 +115,10 @@ namespace Registro_de_huespedes.Views
 			// 
 			// txtModicarusu
 			// 
-			this.txtModicarusu.Location = new System.Drawing.Point(277, 232);
+			this.txtModicarusu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtModicarusu.Location = new System.Drawing.Point(386, 261);
 			this.txtModicarusu.Name = "txtModicarusu";
-			this.txtModicarusu.Size = new System.Drawing.Size(142, 32);
+			this.txtModicarusu.Size = new System.Drawing.Size(125, 32);
 			this.txtModicarusu.TabIndex = 9;
 			this.txtModicarusu.Text = "Modificar Usuario";
 			this.txtModicarusu.UseVisualStyleBackColor = true;
@@ -123,7 +126,8 @@ namespace Registro_de_huespedes.Views
 			// 
 			// btnEliminarusu
 			// 
-			this.btnEliminarusu.Location = new System.Drawing.Point(147, 232);
+			this.btnEliminarusu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEliminarusu.Location = new System.Drawing.Point(232, 261);
 			this.btnEliminarusu.Name = "btnEliminarusu";
 			this.btnEliminarusu.Size = new System.Drawing.Size(124, 32);
 			this.btnEliminarusu.TabIndex = 8;
@@ -133,7 +137,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// btnAgregar
 			// 
-			this.btnAgregar.Location = new System.Drawing.Point(9, 232);
+			this.btnAgregar.Location = new System.Drawing.Point(70, 261);
 			this.btnAgregar.Name = "btnAgregar";
 			this.btnAgregar.Size = new System.Drawing.Size(132, 32);
 			this.btnAgregar.TabIndex = 7;
@@ -143,82 +147,92 @@ namespace Registro_de_huespedes.Views
 			// 
 			// txtNombreusuario
 			// 
-			this.txtNombreusuario.Location = new System.Drawing.Point(122, 206);
+			this.txtNombreusuario.Location = new System.Drawing.Point(155, 206);
 			this.txtNombreusuario.Name = "txtNombreusuario";
 			this.txtNombreusuario.Size = new System.Drawing.Size(190, 20);
 			this.txtNombreusuario.TabIndex = 5;
 			// 
 			// txtTratamientousu
 			// 
-			this.txtTratamientousu.Location = new System.Drawing.Point(122, 167);
+			this.txtTratamientousu.Location = new System.Drawing.Point(155, 167);
 			this.txtTratamientousu.Name = "txtTratamientousu";
 			this.txtTratamientousu.Size = new System.Drawing.Size(190, 20);
 			this.txtTratamientousu.TabIndex = 4;
 			// 
 			// txtRolusuario
 			// 
-			this.txtRolusuario.Location = new System.Drawing.Point(122, 134);
+			this.txtRolusuario.Location = new System.Drawing.Point(155, 131);
 			this.txtRolusuario.Name = "txtRolusuario";
 			this.txtRolusuario.Size = new System.Drawing.Size(190, 20);
 			this.txtRolusuario.TabIndex = 3;
 			// 
 			// txtContraseñalogin
 			// 
-			this.txtContraseñalogin.Location = new System.Drawing.Point(122, 91);
+			this.txtContraseñalogin.Location = new System.Drawing.Point(155, 93);
 			this.txtContraseñalogin.Name = "txtContraseñalogin";
 			this.txtContraseñalogin.Size = new System.Drawing.Size(190, 20);
 			this.txtContraseñalogin.TabIndex = 2;
 			// 
 			// txtUsudelogin
 			// 
-			this.txtUsudelogin.Location = new System.Drawing.Point(122, 53);
+			this.txtUsudelogin.Location = new System.Drawing.Point(155, 56);
 			this.txtUsudelogin.Name = "txtUsudelogin";
 			this.txtUsudelogin.Size = new System.Drawing.Size(190, 20);
 			this.txtUsudelogin.TabIndex = 1;
 			// 
 			// label6
 			// 
-			this.label6.Location = new System.Drawing.Point(16, 206);
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.Color.Black;
+			this.label6.Location = new System.Drawing.Point(6, 209);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(125, 23);
+			this.label6.Size = new System.Drawing.Size(143, 23);
 			this.label6.TabIndex = 6;
 			this.label6.Text = "Nombre Del Usuario";
 			// 
 			// label5
 			// 
-			this.label5.Location = new System.Drawing.Point(16, 170);
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.ForeColor = System.Drawing.Color.Black;
+			this.label5.Location = new System.Drawing.Point(6, 170);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(79, 23);
+			this.label5.Size = new System.Drawing.Size(96, 23);
 			this.label5.TabIndex = 5;
 			this.label5.Text = "Tratamiento";
 			// 
 			// label4
 			// 
-			this.label4.Location = new System.Drawing.Point(16, 134);
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.ForeColor = System.Drawing.Color.Black;
+			this.label4.Location = new System.Drawing.Point(6, 134);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(115, 23);
+			this.label4.Size = new System.Drawing.Size(129, 23);
 			this.label4.TabIndex = 4;
 			this.label4.Text = "Rol De Usuario";
 			// 
 			// label3
 			// 
-			this.label3.Location = new System.Drawing.Point(16, 94);
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.Color.Black;
+			this.label3.Location = new System.Drawing.Point(6, 94);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(115, 23);
+			this.label3.Size = new System.Drawing.Size(156, 23);
 			this.label3.TabIndex = 3;
 			this.label3.Text = "Contraseña De Login";
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(16, 56);
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.Color.Black;
+			this.label2.Location = new System.Drawing.Point(6, 56);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(100, 23);
+			this.label2.Size = new System.Drawing.Size(129, 23);
 			this.label2.TabIndex = 2;
 			this.label2.Text = "Usuario De Login";
 			// 
 			// txtBuscarusu
 			// 
-			this.txtBuscarusu.Location = new System.Drawing.Point(162, 19);
+			this.txtBuscarusu.Location = new System.Drawing.Point(587, 16);
 			this.txtBuscarusu.Name = "txtBuscarusu";
 			this.txtBuscarusu.Size = new System.Drawing.Size(285, 20);
 			this.txtBuscarusu.TabIndex = 0;
@@ -226,9 +240,11 @@ namespace Registro_de_huespedes.Views
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(16, 19);
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.Black;
+			this.label1.Location = new System.Drawing.Point(366, 16);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(158, 23);
+			this.label1.Size = new System.Drawing.Size(203, 23);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Buscar Usuario Por Nombre";
 			// 
@@ -239,17 +255,18 @@ namespace Registro_de_huespedes.Views
 			this.dgvDatosusuarios.BackgroundColor = System.Drawing.Color.Black;
 			this.dgvDatosusuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvDatosusuarios.GridColor = System.Drawing.SystemColors.AppWorkspace;
-			this.dgvDatosusuarios.Location = new System.Drawing.Point(330, 53);
+			this.dgvDatosusuarios.Location = new System.Drawing.Point(366, 53);
 			this.dgvDatosusuarios.Name = "dgvDatosusuarios";
 			this.dgvDatosusuarios.ReadOnly = true;
-			this.dgvDatosusuarios.Size = new System.Drawing.Size(677, 150);
+			this.dgvDatosusuarios.Size = new System.Drawing.Size(647, 173);
 			this.dgvDatosusuarios.TabIndex = 0;
 			// 
 			// frmVerUsuarios
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1033, 286);
+			this.BackColor = System.Drawing.Color.MediumTurquoise;
+			this.ClientSize = new System.Drawing.Size(1043, 326);
 			this.Controls.Add(this.gpbUsuarios);
 			this.Name = "frmVerUsuarios";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

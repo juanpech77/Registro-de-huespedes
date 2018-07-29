@@ -24,3 +24,18 @@ C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Regi
 C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.FrmRegistrosguardados.resources
 C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmVerUsuarios.resources
 C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.frmPrueba.resources
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\bin\Debug\Registro de huespedes.exe.config
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\bin\Debug\Registro de huespedes.exe
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\bin\Debug\Registro de huespedes.pdb
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.csprojResolveAssemblyReference.cache
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.FrmInicioLogin.resources
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.MainForm.resources
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmBuscarAutos.resources
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmCheckinRegistro.resources
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmRegistarHuesped.resources
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmRegistrarAuto.resources
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.FrmRegistrosguardados.resources
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmVerUsuarios.resources
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.csproj.GenerateResource.Cache
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.exe
+C:\Users\felipe\Desktop\Registro-de-huespedes\Registro de huespedes\obj\Debug\Registro de huespedes.pdb

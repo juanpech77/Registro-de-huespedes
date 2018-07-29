@@ -110,20 +110,21 @@ namespace Registro_de_huespedes.Views
 			// 
 			// gpbRegistrardatoshuesped
 			// 
+			this.gpbRegistrardatoshuesped.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.gpbRegistrardatoshuesped.BackColor = System.Drawing.SystemColors.Window;
 			this.gpbRegistrardatoshuesped.Controls.Add(this.groupBox2);
 			this.gpbRegistrardatoshuesped.Controls.Add(this.groupBox1);
 			this.gpbRegistrardatoshuesped.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gpbRegistrardatoshuesped.Location = new System.Drawing.Point(12, 12);
+			this.gpbRegistrardatoshuesped.Location = new System.Drawing.Point(-7, -3);
 			this.gpbRegistrardatoshuesped.Name = "gpbRegistrardatoshuesped";
-			this.gpbRegistrardatoshuesped.Size = new System.Drawing.Size(873, 448);
+			this.gpbRegistrardatoshuesped.Size = new System.Drawing.Size(873, 461);
 			this.gpbRegistrardatoshuesped.TabIndex = 0;
 			this.gpbRegistrardatoshuesped.TabStop = false;
 			this.gpbRegistrardatoshuesped.Text = "Registar Nuevo Huesped";
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.groupBox2.BackColor = System.Drawing.Color.DeepSkyBlue;
 			this.groupBox2.Controls.Add(this.label9);
 			this.groupBox2.Controls.Add(this.label10);
 			this.groupBox2.Controls.Add(this.txtProdedencia);
@@ -140,9 +141,9 @@ namespace Registro_de_huespedes.Views
 			this.groupBox2.Controls.Add(this.label17);
 			this.groupBox2.Controls.Add(this.txtCiudad);
 			this.groupBox2.Controls.Add(this.label12);
-			this.groupBox2.Location = new System.Drawing.Point(406, 29);
+			this.groupBox2.Location = new System.Drawing.Point(406, 41);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(443, 390);
+			this.groupBox2.Size = new System.Drawing.Size(443, 396);
 			this.groupBox2.TabIndex = 49;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Informacion Adicional";
@@ -277,7 +278,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.groupBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
 			this.groupBox1.Controls.Add(this.btnRegistrarhuesped);
 			this.groupBox1.Controls.Add(this.txtApellidoM);
 			this.groupBox1.Controls.Add(this.label2);
@@ -292,9 +293,9 @@ namespace Registro_de_huespedes.Views
 			this.groupBox1.Controls.Add(this.cmbEstadoCivil);
 			this.groupBox1.Controls.Add(this.label20);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox1.Location = new System.Drawing.Point(15, 29);
+			this.groupBox1.Location = new System.Drawing.Point(15, 41);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(371, 390);
+			this.groupBox1.Size = new System.Drawing.Size(371, 396);
 			this.groupBox1.TabIndex = 48;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Datos Generales";
@@ -417,27 +418,27 @@ namespace Registro_de_huespedes.Views
 			// 
 			// btnAgregarautomenup
 			// 
+			this.btnAgregarautomenup.BackColor = System.Drawing.Color.Transparent;
 			this.btnAgregarautomenup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAgregarautomenup.Location = new System.Drawing.Point(641, 466);
+			this.btnAgregarautomenup.Location = new System.Drawing.Point(586, 464);
 			this.btnAgregarautomenup.Name = "btnAgregarautomenup";
 			this.btnAgregarautomenup.Size = new System.Drawing.Size(165, 36);
 			this.btnAgregarautomenup.TabIndex = 36;
 			this.btnAgregarautomenup.Text = "Agregar Auto";
-			this.btnAgregarautomenup.UseVisualStyleBackColor = true;
+			this.btnAgregarautomenup.UseVisualStyleBackColor = false;
 			this.btnAgregarautomenup.Click += new System.EventHandler(this.BtnAgregarautomenupClick);
 			// 
 			// frmRegistarHuesped
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AllowDrop = true;
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
 			this.BackColor = System.Drawing.SystemColors.Window;
-			this.ClientSize = new System.Drawing.Size(886, 523);
+			this.ClientSize = new System.Drawing.Size(848, 503);
 			this.Controls.Add(this.btnAgregarautomenup);
 			this.Controls.Add(this.gpbRegistrardatoshuesped);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmRegistarHuesped";
 			this.Text = "frmRegistarHuesped";
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.gpbRegistrardatoshuesped.ResumeLayout(false);
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
