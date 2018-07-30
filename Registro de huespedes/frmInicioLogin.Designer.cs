@@ -73,7 +73,7 @@ namespace Registro_de_huespedes
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
 			this.pictureBox1.Location = new System.Drawing.Point(10, 0);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(458, 249);
+			this.pictureBox1.Size = new System.Drawing.Size(458, 252);
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
 			// 
@@ -187,7 +187,7 @@ namespace Registro_de_huespedes
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(455, 249);
+			this.ClientSize = new System.Drawing.Size(461, 251);
 			this.Controls.Add(this.btnSalirdelogin);
 			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.lblFecha);

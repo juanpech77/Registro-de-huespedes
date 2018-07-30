@@ -23,4 +23,3 @@ C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Regi
 C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmCheckinRegistro.resources
 C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.FrmRegistrosguardados.resources
 C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.Views.frmVerUsuarios.resources
-C:\Users\Juan Carlos Pech E\Desktop\Integradora_TTS3B\Registro de huespedes\Registro de huespedes\obj\Debug\Registro_de_huespedes.frmPrueba.resources

@@ -103,9 +103,9 @@ namespace Registro_de_huespedes.Views
 			this.groupBox3.Controls.Add(this.dtpFechaSalida);
 			this.groupBox3.Controls.Add(this.label14);
 			this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox3.Location = new System.Drawing.Point(12, 12);
+			this.groupBox3.Location = new System.Drawing.Point(0, -1);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(561, 465);
+			this.groupBox3.Size = new System.Drawing.Size(585, 491);
 			this.groupBox3.TabIndex = 51;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Datos Ocupados Por EL Hotel";
@@ -268,7 +268,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(587, 513);
+			this.ClientSize = new System.Drawing.Size(582, 483);
 			this.Controls.Add(this.groupBox3);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmCheckinRegistro";

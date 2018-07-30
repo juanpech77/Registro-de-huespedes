@@ -44,31 +44,31 @@ namespace Registro_de_huespedes.Views
 			txtPrecioHabitacion.Focus();
 			if (txtPrecioHabitacion.Text=="")
 			{
-				MessageBox.Show("Debe ingresar un precio de la habitacion");
+				MessageBox.Show("Debe ingresar un precio de la habitacion","Registro Incorrecto",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
 			else if (dtpFechaEntrada.Text=="") 
 			{
-				MessageBox.Show("Debe ingresar una fecha de entrada");
+				MessageBox.Show("Debe ingresar una fecha de entrada","Registro Incorrecto",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
 			else if (dtpFechaSalida.Text=="")
 			{
-				MessageBox.Show("Debe ingresar una fecha de salida");
+				MessageBox.Show("Debe ingresar una fecha de salida","Registro Incorrecto",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
 			else if (txtCantidadninios.Text=="") 
 			{
-				MessageBox.Show("Si el huesped no trae acompañantes Niños Escriba un 0");
+				MessageBox.Show("Si el huesped no trae acompañantes Niños Escriba un 0","Registro Incorrecto",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
 			else if (txtCantidadadultos.Text=="") 
 			{
-				MessageBox.Show("Si el huesped no trae acompañantes Adultos Escriba un 0");
+				MessageBox.Show("Si el huesped no trae acompañantes Adultos Escriba un 0","Registro Incorrecto",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
 			else if (txtNumerohabitacion.Text=="")
 			{
-				MessageBox.Show("Debe Escribir Un Número de Habitación");
+				MessageBox.Show("Debe Escribir Un Número de Habitación","Registro Incorrecto",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
 			else if (cmbElijirhuespedsiexiste.Text=="") 
 			{
-				MessageBox.Show("Debe Elejir Su id");
+				MessageBox.Show("Debe Elejir Su Nombre del Huesped","Registro Incorrecto",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
 			else
 			{

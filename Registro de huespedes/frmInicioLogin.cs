@@ -114,10 +114,10 @@ namespace Registro_de_huespedes
 					this.Close();
 				}
 				else 
-					MessageBox.Show("La Contraseña es incoreccta");
+					MessageBox.Show("La Contraseña es incoreccta","Cuidado",MessageBoxButtons.OK,MessageBoxIcon.Warning);
 			}
 			else 
-				MessageBox.Show("El Usuario No Existe");
+				MessageBox.Show("El Usuario No Existe","Cuidado",MessageBoxButtons.OK,MessageBoxIcon.Warning);
 		}
 		
 		

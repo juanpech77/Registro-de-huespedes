@@ -66,11 +66,11 @@ namespace Registro_de_huespedes
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.operacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuRegistrosGu = new System.Windows.Forms.ToolStripMenuItem();
-			this.ingresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.recargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.ingresosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.administracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuAgregarUsuario = new System.Windows.Forms.ToolStripMenuItem();
+			this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusStrip1.SuspendLayout();
 			this.PanMenuVertical.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -221,13 +221,6 @@ namespace Registro_de_huespedes
 			this.mnuRegistrosGu.Text = "Registros Guardados";
 			this.mnuRegistrosGu.Click += new System.EventHandler(this.MnuRegistrosGuClick);
 			// 
-			// ingresosToolStripMenuItem
-			// 
-			this.ingresosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ingresosToolStripMenuItem.Image")));
-			this.ingresosToolStripMenuItem.Name = "ingresosToolStripMenuItem";
-			this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-			this.ingresosToolStripMenuItem.Text = "Income";
-			// 
 			// recargosToolStripMenuItem
 			// 
 			this.recargosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("recargosToolStripMenuItem.Image")));
@@ -235,12 +228,12 @@ namespace Registro_de_huespedes
 			this.recargosToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
 			this.recargosToolStripMenuItem.Text = "Surcharges";
 			// 
-			// ayudaToolStripMenuItem
+			// ingresosToolStripMenuItem
 			// 
-			this.ayudaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ayudaToolStripMenuItem.Image")));
-			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-			this.ayudaToolStripMenuItem.Text = "help";
+			this.ingresosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ingresosToolStripMenuItem.Image")));
+			this.ingresosToolStripMenuItem.Name = "ingresosToolStripMenuItem";
+			this.ingresosToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+			this.ingresosToolStripMenuItem.Text = "Income";
 			// 
 			// administracionToolStripMenuItem
 			// 
@@ -258,6 +251,13 @@ namespace Registro_de_huespedes
 			this.mnuAgregarUsuario.Size = new System.Drawing.Size(165, 22);
 			this.mnuAgregarUsuario.Text = "Agreagar Usuario";
 			this.mnuAgregarUsuario.Click += new System.EventHandler(this.MnuAgregarUsuarioClick);
+			// 
+			// ayudaToolStripMenuItem
+			// 
+			this.ayudaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ayudaToolStripMenuItem.Image")));
+			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+			this.ayudaToolStripMenuItem.Text = "help";
 			// 
 			// MainForm
 			// 
