@@ -30,7 +30,6 @@ namespace Registro_de_huespedes.Views
 		private System.Windows.Forms.Button btnGuardarcarU;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.TextBox txtFoliocar;
-		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		
 		/// <summary>
@@ -56,7 +55,6 @@ namespace Registro_de_huespedes.Views
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBuscarAutos));
 			this.gpbBuscarautos = new System.Windows.Forms.GroupBox();
-			this.button1 = new System.Windows.Forms.Button();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.label5 = new System.Windows.Forms.Label();
 			this.txtFoliocar = new System.Windows.Forms.TextBox();
@@ -80,7 +78,6 @@ namespace Registro_de_huespedes.Views
 			// 
 			// gpbBuscarautos
 			// 
-			this.gpbBuscarautos.Controls.Add(this.button1);
 			this.gpbBuscarautos.Controls.Add(this.dataGridView1);
 			this.gpbBuscarautos.Controls.Add(this.label5);
 			this.gpbBuscarautos.Controls.Add(this.txtFoliocar);
@@ -104,21 +101,10 @@ namespace Registro_de_huespedes.Views
 			this.gpbBuscarautos.TabStop = false;
 			this.gpbBuscarautos.Text = "groupBox1";
 			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(702, 289);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 16;
-			this.button1.Text = "Editar";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Visible = false;
-			this.button1.Click += new System.EventHandler(this.Button1Click);
-			// 
 			// dataGridView1
 			// 
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(409, 226);
+			this.dataGridView1.Location = new System.Drawing.Point(425, 316);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.Size = new System.Drawing.Size(240, 150);
 			this.dataGridView1.TabIndex = 15;
@@ -126,6 +112,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// label5
 			// 
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label5.Location = new System.Drawing.Point(17, 144);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(70, 23);
@@ -141,7 +128,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// btnGuardarcarU
 			// 
-			this.btnGuardarcarU.Location = new System.Drawing.Point(66, 365);
+			this.btnGuardarcarU.Location = new System.Drawing.Point(17, 336);
 			this.btnGuardarcarU.Name = "btnGuardarcarU";
 			this.btnGuardarcarU.Size = new System.Drawing.Size(75, 23);
 			this.btnGuardarcarU.TabIndex = 12;
@@ -151,7 +138,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// btnEditarcar
 			// 
-			this.btnEditarcar.Location = new System.Drawing.Point(249, 365);
+			this.btnEditarcar.Location = new System.Drawing.Point(291, 336);
 			this.btnEditarcar.Name = "btnEditarcar";
 			this.btnEditarcar.Size = new System.Drawing.Size(75, 23);
 			this.btnEditarcar.TabIndex = 11;
@@ -161,7 +148,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// btnEliminacar
 			// 
-			this.btnEliminacar.Location = new System.Drawing.Point(147, 365);
+			this.btnEliminacar.Location = new System.Drawing.Point(210, 336);
 			this.btnEliminacar.Name = "btnEliminacar";
 			this.btnEliminacar.Size = new System.Drawing.Size(75, 23);
 			this.btnEliminacar.TabIndex = 10;
@@ -172,15 +159,15 @@ namespace Registro_de_huespedes.Views
 			// dgvDatoscar
 			// 
 			this.dgvDatoscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvDatoscar.Location = new System.Drawing.Point(307, 70);
+			this.dgvDatoscar.Location = new System.Drawing.Point(279, 70);
 			this.dgvDatoscar.Name = "dgvDatoscar";
-			this.dgvDatoscar.Size = new System.Drawing.Size(495, 150);
+			this.dgvDatoscar.Size = new System.Drawing.Size(523, 233);
 			this.dgvDatoscar.TabIndex = 9;
 			this.dgvDatoscar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDatoscarCellContentClick);
 			// 
 			// btnGuardar
 			// 
-			this.btnGuardar.Location = new System.Drawing.Point(66, 365);
+			this.btnGuardar.Location = new System.Drawing.Point(117, 336);
 			this.btnGuardar.Name = "btnGuardar";
 			this.btnGuardar.Size = new System.Drawing.Size(75, 23);
 			this.btnGuardar.TabIndex = 8;
@@ -190,11 +177,11 @@ namespace Registro_de_huespedes.Views
 			// 
 			// txtDescripcioncar
 			// 
-			this.txtDescripcioncar.Location = new System.Drawing.Point(17, 221);
+			this.txtDescripcioncar.Location = new System.Drawing.Point(17, 216);
 			this.txtDescripcioncar.Multiline = true;
 			this.txtDescripcioncar.Name = "txtDescripcioncar";
 			this.txtDescripcioncar.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.txtDescripcioncar.Size = new System.Drawing.Size(284, 71);
+			this.txtDescripcioncar.Size = new System.Drawing.Size(230, 89);
 			this.txtDescripcioncar.TabIndex = 4;
 			// 
 			// txtModelocar
@@ -213,14 +200,16 @@ namespace Registro_de_huespedes.Views
 			// 
 			// label4
 			// 
-			this.label4.Location = new System.Drawing.Point(17, 195);
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(17, 190);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(100, 23);
+			this.label4.Size = new System.Drawing.Size(95, 23);
 			this.label4.TabIndex = 4;
 			this.label4.Text = "Descripcion";
 			// 
 			// label3
 			// 
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label3.Location = new System.Drawing.Point(17, 102);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(100, 23);
@@ -229,6 +218,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// label2
 			// 
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.Location = new System.Drawing.Point(17, 69);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(100, 23);
@@ -237,7 +227,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// txtBuscarautos
 			// 
-			this.txtBuscarautos.Location = new System.Drawing.Point(100, 28);
+			this.txtBuscarautos.Location = new System.Drawing.Point(390, 25);
 			this.txtBuscarautos.Name = "txtBuscarautos";
 			this.txtBuscarautos.Size = new System.Drawing.Size(244, 22);
 			this.txtBuscarautos.TabIndex = 0;
@@ -245,7 +235,8 @@ namespace Registro_de_huespedes.Views
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(17, 28);
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(307, 28);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(100, 23);
 			this.label1.TabIndex = 0;
@@ -255,12 +246,14 @@ namespace Registro_de_huespedes.Views
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(821, 527);
+			this.BackColor = System.Drawing.Color.DeepSkyBlue;
+			this.ClientSize = new System.Drawing.Size(821, 541);
 			this.Controls.Add(this.gpbBuscarautos);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frmBuscarAutos";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmBuscarAutos";
 			this.Load += new System.EventHandler(this.FrmBuscarAutosLoad);
 			this.gpbBuscarautos.ResumeLayout(false);

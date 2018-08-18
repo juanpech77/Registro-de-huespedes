@@ -80,10 +80,10 @@ namespace Registro_de_huespedes.Views
 		{
 			
 				txtMatriculacar.Text = dgvDatoscar[0,dgvDatoscar.CurrentCellAddress.Y].Value.ToString(); 
-				txtMatriculacar.Tag = dgvDatoscar[0,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();//id visisble
+				txtMatriculacar.Tag = dgvDatoscar[0,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();//id visisible
 				txtModelocar.Text = dgvDatoscar[1,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
-				txtDescripcioncar.Text = dgvDatoscar[3,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
 				txtFoliocar.Text = dgvDatoscar[2,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
+				txtDescripcioncar.Text = dgvDatoscar[3,dgvDatoscar.CurrentCellAddress.Y].Value.ToString();
 				btnGuardarcarU.Visible=true;
 				btnGuardar.Visible=false;
 			

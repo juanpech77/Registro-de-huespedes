@@ -103,7 +103,7 @@ namespace Registro_de_huespedes
 			this.PanMenuVertical.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
 			| System.Windows.Forms.AnchorStyles.Left)));
 			this.PanMenuVertical.AutoSize = true;
-			this.PanMenuVertical.BackColor = System.Drawing.Color.Crimson;
+			this.PanMenuVertical.BackColor = System.Drawing.Color.MidnightBlue;
 			this.PanMenuVertical.Controls.Add(this.pictureBox1);
 			this.PanMenuVertical.Controls.Add(this.btnRegistrarHuesped);
 			this.PanMenuVertical.Controls.Add(this.btnAutomovil);
@@ -117,9 +117,9 @@ namespace Registro_de_huespedes
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(6, 15);
+			this.pictureBox1.Location = new System.Drawing.Point(3, 3);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(144, 51);
+			this.pictureBox1.Size = new System.Drawing.Size(147, 83);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 3;
 			this.pictureBox1.TabStop = false;
@@ -133,7 +133,7 @@ namespace Registro_de_huespedes
 			this.btnRegistrarHuesped.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btnRegistrarHuesped.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrarHuesped.Image")));
 			this.btnRegistrarHuesped.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnRegistrarHuesped.Location = new System.Drawing.Point(26, 86);
+			this.btnRegistrarHuesped.Location = new System.Drawing.Point(28, 126);
 			this.btnRegistrarHuesped.Name = "btnRegistrarHuesped";
 			this.btnRegistrarHuesped.Size = new System.Drawing.Size(112, 93);
 			this.btnRegistrarHuesped.TabIndex = 0;
@@ -150,7 +150,7 @@ namespace Registro_de_huespedes
 			this.btnAutomovil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btnAutomovil.Image = ((System.Drawing.Image)(resources.GetObject("btnAutomovil.Image")));
 			this.btnAutomovil.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnAutomovil.Location = new System.Drawing.Point(6, 413);
+			this.btnAutomovil.Location = new System.Drawing.Point(6, 438);
 			this.btnAutomovil.Name = "btnAutomovil";
 			this.btnAutomovil.Size = new System.Drawing.Size(144, 88);
 			this.btnAutomovil.TabIndex = 2;
@@ -167,7 +167,7 @@ namespace Registro_de_huespedes
 			this.btncheckOut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btncheckOut.Image = ((System.Drawing.Image)(resources.GetObject("btncheckOut.Image")));
 			this.btncheckOut.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btncheckOut.Location = new System.Drawing.Point(12, 195);
+			this.btncheckOut.Location = new System.Drawing.Point(15, 235);
 			this.btncheckOut.Name = "btncheckOut";
 			this.btncheckOut.Size = new System.Drawing.Size(135, 73);
 			this.btncheckOut.TabIndex = 1;
@@ -183,7 +183,7 @@ namespace Registro_de_huespedes
 			this.bntHabitaciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.bntHabitaciones.Image = ((System.Drawing.Image)(resources.GetObject("bntHabitaciones.Image")));
 			this.bntHabitaciones.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.bntHabitaciones.Location = new System.Drawing.Point(6, 303);
+			this.bntHabitaciones.Location = new System.Drawing.Point(6, 337);
 			this.bntHabitaciones.Name = "bntHabitaciones";
 			this.bntHabitaciones.Size = new System.Drawing.Size(144, 65);
 			this.bntHabitaciones.TabIndex = 1;

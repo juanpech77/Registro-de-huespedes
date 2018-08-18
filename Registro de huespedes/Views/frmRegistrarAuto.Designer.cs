@@ -66,7 +66,7 @@ namespace Registro_de_huespedes.Views
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.groupBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
 			this.groupBox1.Controls.Add(this.btnAgregarAuto);
 			this.groupBox1.Controls.Add(this.txtFoliodelhuesped);
 			this.groupBox1.Controls.Add(this.txtDescripcionauto);

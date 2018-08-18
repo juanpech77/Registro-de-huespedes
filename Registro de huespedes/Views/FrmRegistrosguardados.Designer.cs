@@ -55,9 +55,11 @@ namespace Registro_de_huespedes.Views
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.DeepSkyBlue;
 			this.ClientSize = new System.Drawing.Size(962, 330);
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "FrmRegistrosguardados";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmRegistrosguardados";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
